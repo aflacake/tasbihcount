@@ -1,33 +1,35 @@
 //mengambil id
-const button1 =
-  document.querySelector("#buttuon1");
+const but =
+  document.querySelector(
+    "#but");
   
-const count =
-  document.querySelector("#count");
+const hitung =
+  document.querySelector(
+    "#hitung");
 
-const counted =
-  document.querySelector("#counted");
+const terhitung =
+  document.querySelector(
+    "#terhitung");
 
 //jumlah terhitung
 let cost = 0;
-count.innerHTML = cost;
+hitung.innerHTML = cost;
 
-function func1() {
+function raz() {
   cost = cost + 1;
-  count.innerHTML = cost;
-
+  hitung.innerHTML = cost;
 if (cost === 33) {
-  counted.innerHTML = "Terhitug 33";
+  terhitung.innerHTML = "Terhitug 33";
  };
 if (cost === 66) {
-  counted.innerHTML = "Terhitung 66";
+  terhitung.innerHTML = "Terhitung 66"
  };
 if (cost === 99) {
-  counted.innerHTML = "Terhitung 99";
+  terhitung.innerHTML = "Terhitung 99"
  };
 if (cost === 100) {
-  counted.innerHTML = "Terhitung 100"
+  terhitung.innerHTML = "Terhitung 100"
  };
 };
 
-button1.onclick = func1;
+but.onclick = raz;
