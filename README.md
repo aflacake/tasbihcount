@@ -6,6 +6,16 @@ Alat menghitung dengan 33 bilangan digital secara konsisten: 33, 66, 99, total k
 - [X] Daftar
 - [ ] Perpustakaan
 
-
 ## Acara `(ALPHA)`
-Tasbih Count mengadakan acara (umum) waktu mengingat Allah, menandai kemajuan sampai dimana, hitungan akurat.
+Tasbih Count mengadakan acara (umum) waktu mengingat Allah, menandai kemajuan sampai dimana, mejadikan hitungan akurat.
+### UP-COMING
+- [ ] Fitur hari peryaan Ramadhan
+- [ ] Counter permintaan tasbih pelanggan
+
+
+# Instalasi
+Tidak membutuhkan yang diperlukan, deploy halaman disiapkan atau unduh paket tertera.
+
+
+# Berkontribusi
+Ini adalah proyek mandiriku [@aflacake](https://github.com/aflacake), namun mungkin ada kontibutor, status diluar pemegang, dan penulis tertulis. Berkontak dengan Saya permintaannya perizinan aturan atau Anda sebagai kontributor saja.
