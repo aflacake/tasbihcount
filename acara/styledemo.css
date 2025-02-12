@@ -1,0 +1,138 @@
+body {
+  font-family: Arial;
+}
+
+/* counter */
+.div1 {
+  /*style*/
+  background-color: rgb(28, 18, 79);
+  color: rgb(117, 117, 117);
+  font-family: Arial;
+
+  /*layout*/
+  margin: auto;
+  width: auto;
+  height: auto;
+  padding: 5px 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  .div2 {
+  background-color: rgb(28, 223, 113);
+  padding: 5px 5px;
+  }
+
+/* nav1 */
+.nav1 {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: rgb(28, 18, 79);
+  box-shadow:
+    rgba(0, 0, 0, 0.9) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+  #rumah {
+    float: right;
+  }
+  #logo {
+    float: right;
+  }
+  #tentang {
+    float: left;
+  }
+  #isu {
+    float: left;
+  }
+  li a {
+    display: flex;
+    color: rgb(117, 117, 117);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+    li a:hover {
+      background-color: rgb(28, 223, 113);
+    }
+  li img {
+  display: flex;
+  color: rgb(117, 117, 117);
+  text-align: center;
+  padding: 9px 9px;
+  text-decoration: none;
+  }
+
+/*data dan tentang*/
+#simpan {
+  text-align: right;
+  padding: 3.5px;
+  font-family: Arial Narrow;
+  color: white
+}
+
+/* konten1 */
+.konten1 {
+  margin: auto;
+  padding: 3.5px;
+  float: left;
+  width: 27%;
+}
+  #tentang2 {
+      font-size: 150%;
+      background-image: linear-gradient(rgb(28, 18, 79), rgb(28, 223, 113)); 
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    #tentang3 {
+      font-size: 100%;
+      background-image: linear-gradient(rgb(28, 18, 79), rgb(28, 223, 113)); 
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    }
+
+
+/*konten2 */
+.konten2 {
+  margin: auto;
+  padding: 3.5px;
+  float: left;
+  width: 25%;
+}
+  #tentang1 {
+    padding: 0px 0px;
+  }
+  #update {
+    
+  }
+  #update > h2, p {
+    margin: 2px;
+  }
+
+/*konten3*/
+.konten3 {
+  margin: auto;
+  padding: 3.5px;
+  float: left;
+  width: 25%;
+}
+  #populer {
+    
+  }
+  #populer > h2, p {
+    margin: 2px;
+  }
+
+/* footer */
+.footer {
+  background-color: rgb(28, 18, 79);
+  color: white;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+  footer img {
+    
+  }
