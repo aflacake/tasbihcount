@@ -1,0 +1,86 @@
+body {
+  font-family: Arial;
+}
+
+/* nav1 */
+.nav1 {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: rgb(28, 18, 79);
+  box-shadow:
+    rgba(0, 0, 0, 0.9) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+  #rumah {
+    float: right;
+  }
+  #logo {
+    float: right;
+  }
+  #tentang {
+    float: left;
+  }
+  #isu {
+    float: left;
+  }
+  li a {
+    display: flex;
+    color: rgb(117, 117, 117);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+    li a:hover {
+      background-color: rgb(28, 223, 113);
+    }
+  li img {
+  display: flex;
+  color: rgb(117, 117, 117);
+  text-align: center;
+  padding: 9px 9px;
+  text-decoration: none;
+  }
+
+/*Judul*/
+.judul {
+  width: 25%;
+  background-color: rgb(28, 223, 113);
+  border-radius: 0 250px 250px 0;
+  padding: 14px;
+  margin: 7px;
+  padding-top: 0;
+  float: left;
+}
+
+.weatherwidget-io {
+  background-color: rgb(90, 90, 90);
+  color: rgb(28, 223, 113);
+}
+
+/*Jadwal Ramdhan*/
+.tabeljadwal {
+  width: 70%;
+  float: left;
+}
+.jadwal {
+  border-collapse: collapse;
+}
+.jadwal, #jadwal2, #jadwal3 {
+  border: 1.5px solid;
+}
+  #jadwal2 {
+    background-color: rgb(28, 223, 113);
+    color: rgb(90, 90, 90);
+    padding: 5px;
+  }
+  #jadwal3 {
+    background-color: rgb(28, 18, 79);
+    color: rgb(117, 117, 117);
+    padding: 7px;
+  }
+    #jadwal3:hover {
+      background-color: rgb(28, 223, 113);
+      color: rgb(28, 18, 79);
+    }
