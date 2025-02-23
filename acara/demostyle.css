@@ -66,6 +66,11 @@ body {
   text-decoration: none;
   }
 
+/* button */
+#but:active {
+  transition-duration: 4s ease;
+  transform: scale(.70);
+}
 /*data dan tentang*/
 #simpan {
   text-align: right;
@@ -133,8 +138,8 @@ body {
 .bgcircles {
   background: none;
   background: -webkit-linear-gradient(to left, rgb(28, 18, 79), rgb(28, 223, 113));
-  width: 100%;
-  height: 100vh;
+  width: 50%;
+  height: 100%;
 }
   .circles li {
     position: absolute;
@@ -144,10 +149,10 @@ body {
     height: 20px;
     background: rgba(28, 223, 113, 0.2);
     animation: animate 25s linear infinite;
-    bottom: -150px;
+    bottom: -50px;
   }
     .circles li:nth-child(1) {
-      left: 25%;
+      left: 13%;
       width: 80px;
       height: 80px;
       animation-delay: 0s;
@@ -160,52 +165,52 @@ body {
       animation-duration: 12s;
     }
     .circles li:nth-child(3) {
-      left: 70%;
+      left: 25%;
       width: 60px;
       height: 60px;
       animation-delay: 4s;
     }   
     .circles li:nth-child(4) {
-      left: 40%;
+      left: 12%;
       width: 60px;
       height: 60px;
       animation-delay: 0s;
       animation-duration: 18s;
     }
     .circles li:nth-child(5) {
-      left: 65%;
+      left: 15%;
       width: 20px;
       height: 20px;
       animation-delay: 0s;
     }
     .circles li:nth-child(6) {
-      left: 75%;
+      left: 5%;
       width: 110px;
       height: 110px;
       animation-delay: 0s;
     }
     .circles li:nth-child(7) {
-      left: 35%;
+      left: 2%;
       width: 150px;
       height: 150px;
       animation-delay: 7s;
     }   
     .circles li:nth-child(8) {
-      left: 50%;
+      left: 22%;
       width: 25px;
       height: 25px;
       animation-delay: 15s;
       animation-duration: 45s;
     }
     .circles li:nth-child(9) {
-      left: 20%;
+      left: 8%;
       width: 15px;
       height: 15px;
       animation-delay: 2s;
       animation-duration: 35s;
     }
     .circles li:nth-child(10) {
-      left: 85%;
+      left: 17%;
       width: 150px;
       height: 150px;
       animation-delay: 0s;
