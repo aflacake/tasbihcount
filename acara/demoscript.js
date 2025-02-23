@@ -1,23 +1,20 @@
+document.addEventListener("DOMContentLoaded", function() {
 //mengambil id
-const but =
-  document.querySelector(
-    "#but");
-  
-const hitung =
-  document.querySelector(
-    "#hitung");
-
-const terhitung =
-  document.querySelector(
-    "#terhitung");
+const but = document.querySelector("#but");
+const hitung = document.querySelector("#hitung");
+const terhitung = document.querySelector("#terhitung");
 
 //jumlah terhitung
 let cost = 0;
 hitung.innerHTML = cost;
+const maxCost = 100000;
 
 function raz() {
+  if(cost < maxCost) {
   cost = cost + 1;
   hitung.innerHTML = cost;
+  }
+
 if (cost === 1) {
   terhitung.innerHTML = "Subhanallah";
  };
@@ -36,3 +33,4 @@ if (cost === 101) {
 };
 
 but.onclick = raz;
+});
