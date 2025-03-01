@@ -1,6 +1,5 @@
 # Perpustakaan Tasbih Counter
 Daftar isi:
-- Doa harian 
 - Media
   - Artikel
   - Spot gambar
