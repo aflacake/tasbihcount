@@ -7,7 +7,7 @@ Daftar isi:
 
 
 # Hak Cipta
-CC BY-NC 4.0 NonKmersial
+CC BY-NC 4.0 NonKomersial
 
 Properti tulisan dan gambar adalah milik @aflacake. Kecuali dinyatakan lain.
 
