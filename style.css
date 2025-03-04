@@ -1,6 +1,15 @@
 body {
   font-family: Arial;
 }
+@media (max-width: 768px) {
+	.konten1, .konten2, .konten3 {
+		width: 100%;
+	margin-bottom: 20px;
+	}
+	#acara, #perpustakaan {
+		width: 100%;
+	}
+}
 
 /* counter */
 .div1 {
@@ -27,6 +36,7 @@ body {
 
 /* nav1 */
 .nav1 {
+	display: block;
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -67,9 +77,15 @@ body {
   }
 /* button */
 #but:active {
+  font-weight: bold;
   transition-duration: 4s ease;
   transform: scale(.70);
 }
+#reset:active {
+  transition-duration: 4s ease;
+  transform: scale(.70);
+}
+
 /*data dan tentang*/
 #simpan {
   text-align: right;
@@ -80,12 +96,13 @@ body {
 
 /* konten1 */
 .konten1 {
+	display: block;
   background-color: rgb(117, 117, 117);
   border-radius: 0 0 230px 0;
   margin: auto;
   padding: 3.5px;
   float: left;
-  width: 27%;
+  width: 30%;
 }
   #tentang2 {
     font-size: 150%;
@@ -100,6 +117,7 @@ body {
 
 /*konten2 */
 .konten2 {
+	display: block;
   margin: auto;
   padding: 3.5px;
   float: left;
@@ -117,6 +135,7 @@ body {
 
 /*konten3*/
 .konten3 {
+	display: block;
   margin: auto;
   padding: 3.5px;
   float: left;
@@ -133,7 +152,7 @@ body {
     margin: 9px;
     box-shadow: 0 9px rgb(117, 117, 117);
     display: inline-block;
-    cursor: center;
+    cursor: pointer;
   }
     #acara:hover {
       background-color: rgb(28, 18, 79);
@@ -157,7 +176,7 @@ body {
     margin: 9px;
     box-shadow: 0 9px rgb(117, 117, 117);
     display: inline-block;
-    cursor: center;
+    cursor: pointer;
   }
     #perpustakaan:hover {
       background-color: rgb(28, 18, 79);
@@ -195,72 +214,77 @@ body {
     height: 20px;
     background: rgba(28, 223, 113, 0.2);
     animation: animate 25s linear infinite;
-    bottom: -50px;
+    bottom: -500px;
   }
     .circles li:nth-child(1) {
       left: 13%;
       width: 80px;
       height: 80px;
-      animation-delay: 0s;
+	animation-delay: 2s;
+      animation-duration: 4s;
     }
     .circles li:nth-child(2) {
       left: 10%;
       width: 20px;
       height: 20px;
-      animation-delay: 2s;
-      animation-duration: 12s;
+	animation-delay: 4s;
+      animation-duration: 7s;
     }
     .circles li:nth-child(3) {
       left: 25%;
       width: 60px;
       height: 60px;
-      animation-delay: 4s;
+	animation-delay: 2s;
+      animation-duration: 9s;
     }   
     .circles li:nth-child(4) {
       left: 12%;
       width: 60px;
       height: 60px;
-      animation-delay: 0s;
-      animation-duration: 18s;
+	animation-delay: 2s;
+      animation-duration: 16s;
     }
     .circles li:nth-child(5) {
       left: 15%;
       width: 20px;
       height: 20px;
-      animation-delay: 0s;
+	animation-delay: 4s;
+      animation-duration: 12s;
     }
     .circles li:nth-child(6) {
       left: 5%;
       width: 110px;
       height: 110px;
-      animation-delay: 0s;
+	animation-delay: 2s;
+      animation-duration: 11s;
     }
     .circles li:nth-child(7) {
       left: 2%;
       width: 150px;
       height: 150px;
-      animation-delay: 7s;
+	animation-delay: 4s;
+      animation-duration: 9s;
     }   
     .circles li:nth-child(8) {
       left: 22%;
       width: 25px;
       height: 25px;
-      animation-delay: 15s;
-      animation-duration: 45s;
+	animation-delay: 2s;
+      animation-duration: 8s;
     }
     .circles li:nth-child(9) {
       left: 8%;
       width: 15px;
       height: 15px;
-      animation-delay: 2s;
-      animation-duration: 35s;
+	animation-delay: 2s;
+      animation-duration: 6s;
     }
     .circles li:nth-child(10) {
       left: 17%;
       width: 150px;
       height: 150px;
-      animation-delay: 0s;
-      animation-duration: 11s;
+	animation-delay: 4s;
+      animation-duration: 10s;
     }
   @keyframes animate {
     0% {
@@ -301,11 +325,9 @@ body {
 
 /* footer */
 .footer {
+	display: table;
   background-color: rgb(28, 18, 79);
   color: white;
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
   width: 100%;
 }
   footer img {
