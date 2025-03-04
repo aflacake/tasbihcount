@@ -3,7 +3,7 @@
   <head>
     <title>Tasbih Count</title>
     <!-- style -->
-    <link rel="icon" type="image/png" href="../img/logo tasbih count.ico">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/aflacake/tasbihcount/main/img/logo-tasbih-count.ico">
     <link rel="stylesheet" href="style.css">
     
   </head>
@@ -11,7 +11,7 @@
 
   <nav>
     <ul class="nav1">
-      <li id="logo"><img src="https://github.com/user-attachments/assets/5d5b080c-1dfe-488e-b798-1ddfb5514650" width="30" height="30"/></li>
+      <li id="logo"><img src="https://github.com/aflacake/tasbihcount/raw/main/img/logo-tasbih-count.png" width="30" height="30"/></li>
       <li id="rumah"><a href="https://aflacake.github.io/tasbihcount/">Tasbih Count</a></li>
       <li id="tentang"><a href="https://github.com/aflacake/tasbihcount/blob/main/README.md">Tentang</a></li>
       <li id="isu"><a href="https://github.com/aflacake/tasbihcount/issues">Isu</a></li>
@@ -24,8 +24,9 @@
       <h3 id="terhitung"></h3>
 
       <h3>Terhitung:</h3>
-      <h1 id="hitung">0</h1>
-      <button id="but" style="background-color: rgb(28, 223, 113); border: none; color: rgb(90, 90, 90); padding: 7.5px 10px; margin: 9px; display: inline-block; cursor: pointer; transition: background-color: 0.3s ease, transform: 0.3s ease;">Hitung</button>
+      <h1 id="hitung" style="color: rgb(28, 223, 113);">0</h1>
+      <button id="but" style="font-size: 24px; background-color: rgb(28, 223, 113); border: none; color: rgb(90, 90, 90); padding: 7.5px 10px; margin: 9px; display: inline-block; cursor: pointer; transition: background-color: 0.3s ease, transform: 0.3s ease;">Hitung</button>
+      <button id="reset" onclick="reset()" style="font-size: 14px; background-color: rgb(28, 223, 113); border: none; color: rgb(90, 90, 90); padding: 7.5px 10px; margin: 9px; display: inline-block; cursor: pointer; transition: background-color: 0.3s ease, transform: 0.3s ease">Reset</button>
       <p id="simpan">*Data hitung Anda tidak disimpan</p>
   </div>
     <div class="div2"></div>
@@ -66,7 +67,7 @@
       <a href="https://github.com/aflacake/tasbihcount/tree/main/perpustakaan" style="outline: none; color: rgb(90, 90, 90);">
         <button id="perpustakaan">Perpustakaan</button>
       </a>
-      <p id="ketperpus">Ikuti acara DEMO, sebelum rilisan stabil di luncurkan</p>
+      <p id="ketperpus">Media dan artikel yang mungkin menarik bagi Anda.</p>
     </atticle>
   <br>
     <article id="populer">
@@ -102,12 +103,12 @@
   </ul>
 </div>
 
-
     <!-- footer -->
   <div class="footer">
     <div style="background-color: rgb(28, 223, 113); padding: 5px 5px;"></div><br>
     <p>Made by 💚 @aflacake<br>2025-<?php echo date("Y")?></p>
   </div>
+
 
     <!-- script -->
     <script src="script.js"></script>
