@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 const but = document.querySelector("#but");
 const hitung = document.querySelector("#hitung");
 const terhitung = document.querySelector("#terhitung");
+const resetBtn = document.querySelector("#reset");
 
 //jumlah terhitung
 let cost = 0;
@@ -11,7 +12,7 @@ const maxCost = 100000;
 
 function raz() {
   if(cost < maxCost) {
-  cost = cost + 1;
+  cost++;
   hitung.innerHTML = cost;
   }
 
@@ -33,4 +34,14 @@ if (cost === 101) {
 };
 
 but.onclick = raz;
+
+
+
+function reset() {
+  cost = 0;
+  hitung.innerHTML = cost;
+	terhitung.textContent = '';
+  console.log("Reset: " + cost);
+}
+	resetBtn.onclick = reset;
 });
