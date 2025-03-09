@@ -6,30 +6,28 @@ const terhitung = document.querySelector("#terhitung");
 const resetBtn = document.querySelector("#reset");
 
 //jumlah terhitung
-let cost = 0;
-hitung.innerHTML = cost;
-const maxCost = 100000;
+let cost = parseInt(localStorage.getItem('cost')) || 0;
+hitung.textContent = cost;
+const maxCost = 101;
 
 function raz() {
   if(cost < maxCost) {
   cost++;
-  hitung.innerHTML = cost;
+  hitung.textContent = cost;
+  localStorage.setItem('cost', cost);
   }
 
-if (cost === 1) {
-  terhitung.innerHTML = "Subhanallah";
+if (cost === 0 && !localStorage.getItem("0")) {
+  terhitung.textContent = "Subhanallah";
  };
-if (cost === 34) {
-  terhitung.innerHTML = "Alhamdulillah"
+if (cost === 33 && !localStorage.getItem("33")) {
+  terhitung.textContent = "Alhamdulillah"
  };
-if (cost === 67) {
-  terhitung.innerHTML = "Allahu akbar"
+if (cost === 66 && !localStorage.getItem("66")) {
+  terhitung.textContent = "Allahu akbar"
  };
-if (cost === 101) {
-  terhitung.innerHTML = "Selesai"
- };
- if (cost === 99999) {
-  terhitung.innerHTML = "Terhitung 99999. Berkat rahmat-Nya, Dia jadikan untukmu malam dan siang agar kamu beristirahat pada malam hari, agar kamu mencari sebagian karunia-Nya (pada siang hari), dan agar kamu bersyukur kepada-Nya (Q.S. Al-Qashash: 73)"
+if (cost === 100 && !localStorage.getItem("100")) {
+  terhitung.textContent = "Selesai"
  };
 };
 
@@ -41,7 +39,8 @@ function reset() {
   cost = 0;
   hitung.innerHTML = cost;
 	terhitung.textContent = '';
-  console.log("Reset: " + cost);
+	localStorage.removeItem('cost', cost);
+  	console.log("Reset: " + cost)
 }
 	resetBtn.onclick = reset;
 });
