@@ -168,6 +168,32 @@ body {
   #ketdemo {
     border-bottom: 5px solid rgb(28, 223, 113);
   }
+
+  #jadwal {
+    text-align: center;
+    background-color: rgb(28, 223, 113);
+    border: none;
+    color: rgb(90, 90, 90);
+    padding: 7.5px 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 9px;
+    box-shadow: 0 9px rgb(117, 117, 117);
+    display: inline-block;
+    cursor: pointer;
+  }
+    #jadwal:hover {
+      background-color: rgb(28, 18, 79);
+    }
+    #jadwal:active {
+      background-color: ;
+      box-shadow: 0 4.5px rgb(117, 117, 117);
+      transform: translateY(4.5px)
+    }
+  #ketjadwal {
+    border-bottom: 5px solid rgb(28, 223, 113);
+  }
+
   #perpustakaan {
     text-align: center;
     background-color: rgb(28, 223, 113);
