@@ -17,7 +17,7 @@ function raz() {
   localStorage.setItem('cost', cost);
   }
 
-if (cost === 0 && !localStorage.getItem("0")) {
+if (cost === 1 && !localStorage.getItem("1")) {
   terhitung.textContent = "Subhanallah";
  };
 if (cost === 33 && !localStorage.getItem("33")) {
