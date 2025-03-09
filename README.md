@@ -15,7 +15,8 @@ Tasbih Count mengadakan acara (umum) waktu mengingat Allah, menandai kemajuan sa
 
 
 # Instalasi
-Tidak membutuhkan yang diperlukan, deploy halaman disiapkan atau unduh paket tertera.
+Tidak membutuhkan yang diperlukan, deploy halaman disiapkan atau unduh paket tertera.\
+Deploy:  https://aflacake.github.io/tasbihcount/
 
 
 # Berkontribusi
