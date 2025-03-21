@@ -1,0 +1,21 @@
+name: Label Isu TC
+
+on:
+  issues:
+    type: [opened]
+
+jobs:
+  add-label:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Tambahkan label "isu baru"
+        uses: actions/github-script@v5
+        with:
+          script: |
+            github.rest.issues.addLabels({
+            issue_number: ${{ github.event.issue.number }},
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            labels: ['isu baru']
+            })
