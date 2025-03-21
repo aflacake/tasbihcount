@@ -3,6 +3,7 @@
 }
 body {
   	font-family: Arial;
+	background-color: rgba(28, 223, 113, 0.3);
 	cursor: url(''), auto;
 }
 @media (max-width: 768px) {
@@ -79,10 +80,11 @@ body {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
-  background-color: rgb(28, 18, 79);
+  background-color: rgb(117, 117, 117);
+	border-bottom: 3px solid rgb(28, 223, 113);
   box-shadow:
-    rgba(0, 0, 0, 0.9) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    rgba(117, 117, 117, 0.9) 0px 4px 7px 0px,
+    rgba(117, 117, 117, 0.15) 0px 0px 0px 4px;
 }
   #rumah {
     float: right;
@@ -98,17 +100,19 @@ body {
   }
   li a {
     display: flex;
-    color: rgb(117, 117, 117);
+    color: rgb(28, 223, 113);
     text-align: center;
     padding: 14px 16px;
+    font-weight: bold;
     text-decoration: none;
   }
     li a:hover {
+      color: rgb(28, 18, 79);
       background-color: rgb(28, 223, 113);
     }
   li img {
   display: flex;
-  color: rgb(117, 117, 117);
+  color: rgb(28, 223, 113);
   text-align: center;
   padding: 9px 9px;
   text-decoration: none;
@@ -193,6 +197,7 @@ body {
     cursor: pointer;
   }
     #acara:hover {
+	color: rgb(28, 223, 113);
       background-color: rgb(28, 18, 79);
     }
     #acara:active {
@@ -218,6 +223,7 @@ body {
     cursor: pointer;
   }
     #jadwal:hover {
+	color: rgb(28, 223, 113);
       background-color: rgb(28, 18, 79);
     }
     #jadwal:active {
@@ -243,6 +249,7 @@ body {
     cursor: pointer;
   }
     #perpustakaan:hover {
+	color: rgb(28, 223, 113);
       background-color: rgb(28, 18, 79);
     }
     #perpustakaan:active {
