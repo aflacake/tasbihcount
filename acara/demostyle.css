@@ -2,8 +2,9 @@
 	padding: 0;
 }
 html, body {
-  font-family: Arial;
+	font-family: Arial;
 	overflow: scroll;
+	background-color: rgba(28, 223, 113, 0.3);
 }
 html::-webkit-scrollbar, body::-webkit-scrollbar {
 		display: none;
@@ -75,15 +76,16 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
 /* nav1 */
 .nav1 {
-  display: block;
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
-  background-color: rgb(28, 18, 79);
-  box-shadow:
-    rgba(0, 0, 0, 0.9) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	display: block;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: rgb(117, 117, 117);
+	border-bottom: 3px solid rgb(28, 223, 113);
+	box-shadow:
+	  rgba(117, 117, 117, 0.9) 0px 4px 7px 0px,
+	  rgba(117, 117, 117, 0.15) 0px 0px 0px 4px;
 }
   #rumah {
     float: right;
@@ -98,18 +100,20 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     float: left;
   }
   li a {
-    display: flex;
-    color: rgb(117, 117, 117);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+	  display: flex;
+	  color: rgb(28, 223, 113);
+	  text-align: center;
+	  padding: 14px 16px;
+	  font-weight: bold;
+	  text-decoration: none;
   }
     li a:hover {
-      background-color: rgb(28, 223, 113);
+	    color: rgb(28, 18, 79);
+	    background-color: rgb(28, 223, 113);
     }
   li img {
   display: flex;
-  color: rgb(117, 117, 117);
+  color: rgb(28, 223, 113);
   text-align: center;
   padding: 9px 9px;
   text-decoration: none;
