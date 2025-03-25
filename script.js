@@ -1,3 +1,61 @@
+//notifikasi halaman utama
+﻿function checkNotificationPermission() {
+    const premissionStatus = localStorage.getItem("notificationPremission");
+
+    if (permissionStatus === "granded") {
+         console.log("sudah diizinkan sebelumnya");
+        return true;
+    }
+    if (permissionStatus != "granded") {
+        requestNotificationPermission();
+    }
+    return false;
+}
+
+function.requestNotificationPermission () {
+    Notification.requestPermission().then(permission => {
+        if (permission === "granded") {
+            console.log("Notifikasi granded!");
+            localStorage.setItem("notificationPermission", "granded");
+        }
+    });
+}
+
+function sendNotification(message) {
+    if (Notification.permission === "granded") {
+        new Notification(message);
+    }
+}
+
+function checkAndSendReminderTasbih() {
+    const sekarangRemind = new Date();
+    const  jamRemind = sekarangRemind.getHours();
+    const menitRemind = sekarangRemind.getMinutes();
+
+    if (jamRemind === 5 && menitRemind === 0) {
+        sendNotification("Waktunya dzikir Subuh! mulai ambil Tasbih Count untuk melacak proses Anda.");
+    } else if (jamRemind === 12 && menitRemind === 0) {
+        sendNotification("Waktunya dzikir Zuhur! mulai ambil Tasbih Count untuk melacak proses Anda.");
+    } else if (jamRemind === 15 && menitRemind === 0) {
+        sendNotification("Waktunya dzikir Asar! mulai ambil Tasbih Count untuk melacak proses Anda.");
+    } else if (jamRemind === 18 && menitRemind === 0) {
+        sendNotification("Waktunya dzikir Maghrib! mulai ambil Tasbih Count untuk melacak proses Anda.");
+    } else if (jamRemind === 19 && menitRemind === 0) {
+        sendNotification("Waktunya dzikir Isya'! mulai ambil Tasbih Count untuk melacak proses Anda.");
+    }
+}
+
+function mulaiMengingat() {
+    setInterval((checkAndSendReminder, 6000);
+}
+if (checkNotificationPermission()) {
+    mulaiMengingat();
+    } else {
+        requestNotificationPermission();
+}
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
 //mengambil id
 const but = document.querySelector("#but");
@@ -33,7 +91,7 @@ if (jumlah === 100 && !localStorage.getItem("100")) {
  if (jumlah === 1000 && !localStorage.getItem("1000")) {
   terhitung.textContent = "Terhitung 1000. Wahai orang-orang beriman, ingatlah Allah dengan zikir sebanyak-banyaknya. (Q.S. Al-Ahzab: 41)"
  };
- if (cost === 3000 && !localStorage.getItem("3000")) {
+ if (jumlah === 3000 && !localStorage.getItem("3000")) {
   terhitung.textContent = "Terhitung 3000. Wahai orang-orang beriman, ingatlah Allah dengan zikir sebanyak-banyaknya. (Q.S. Al-Ahzab: 41)"
  };
  if (jumlah === 99999 && !localStorage.getItem("99999")) {
@@ -52,5 +110,49 @@ function reset() {
   localStorage.removeItem('jumlah', jumlah);
   console.log("Reset: " + jumlah);
 }
-	resetBtn.onclick = reset;
+    resetBtn.onclick = reset;
 });
+
+
+
+const kutipan = [
+    "Selamat sejahtera bagi Ilyas -(QS. As-Saffat: 130).",
+    "Islam itu indah dan mudah.",
+    "Hai orang-orang beriman diwajibkan atas kamu shaum sebagaimana diwajibkan atas orang-orang sebelum kamu agar kamu bertakwa.",
+    "Kecuali shaum, shaum itu untuk-Ku dan Aku-lah yang memperhitungkannya -(HR. Muslim).", 
+    'Dan telah Kami angkat ke atas mereka bukit Thursina untuk perjanjian mereka. Dan kami perintahkan mereka, "Masuklah pintu gerbang itu sambil bersujud," dan Kami perintahkan kepada mereka, "Janganlah kamu melanggar peraturan hari Sabtu," dan Kami telah mengambil dari mereka perjanjian yang kokoh.',
+    "Rukun islam ada 5, rukun iman ada 6.", 
+    "Nabi yang wajib imani ada 25.",
+    "Raja Fir'aun berakhir di laut mati.",
+    "Orang mukmin yang paling sempurna imannya yaitu yang paling baik alhlaknya -(HR. Abu Daud dan Ibnu Majah).",
+    "Dan kehidupan didunia ini hanya senda gurau dan permainan. Dan sesungguhnya negeri akhirat itulah kehidupan yang sebenarnya, sekiranya mereka mengetahui -(QS. Al-Ankabut: 64).",
+    "Sesungguhnya Allah apabila hendak membinasakan seseorang. Dia mencabut rasa malu dari orang tersebut.",
+    "Hai orang-orang yang beriman, peliharalah dirimu dan keluargamu dari api neraka -(QS. At-Tahrim: 6)."
+];
+let kutipanTampilSebelumnya = "";
+
+function tampilKutipanAcak() {
+    const randomKutipan = Math.floor(Math.random() * kutipan.length);
+    const kutipanAcak = kutipan[randomKutipan];
+    document.getElementById("kutipanAcak").textContent = kutipanAcak;
+    const kutipanTransisi = document.getElementById("kutipanAcak");
+
+    if (kutipanAcak !== kutipanTampilSebelumnya) {
+    if (kutipanTransisi) {
+    kutipanTransisi.classList.add("fade-out");
+
+    setTimeout(() => {
+        kutipanTransisi.textContent = kutipanAcak;
+        kutipanTransisi.classList.remove("fade-out");
+    }, 4000);
+  }
+ }
+}
+
+    function setKutipanRandom() {
+        const waktuKutipAcak = Math.floor(Math.random() * (33000 - 17000 + 1)) + 17000;
+        setInterval(() => {
+            tampilKutipanAcak();
+        }, waktuKutipAcak);
+    }
+    setKutipanRandom();
