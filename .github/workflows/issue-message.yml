@@ -1,0 +1,16 @@
+name: Pesan Otomatis di Isu
+
+on:
+    issue:
+        types: [opened]
+
+jobs: 
+    send-message: 
+        runs-on: ubuntu latest
+        steps:
+            - name: Tasbih Count Otomatis
+            - uses: peter-evans/issue-comment@v2
+            with:
+                issue-number: ${{ github.event.issue.number }}
+            body: |
+                Terima kasih atas Isunya. @aflacake segera meninjau dan memberikan respon terbaik!
