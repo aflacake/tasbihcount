@@ -1,4 +1,5 @@
 * {
+	margin: 0;
 	padding: 0;
 }
 body {
@@ -54,11 +55,12 @@ body {
 .div1 {
   /*style*/
   background-color: rgb(28, 18, 79);
-  color: rgb(117, 117, 117);
+  color: white;
   font-family: Arial;
+	border-bottom: 10px solid rgb(28, 223, 113);
 
   /*layout*/
-  margin: auto;
+	margin: auto;
   width: auto;
   height: auto;
   padding: 5px 5px;
@@ -68,10 +70,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-  .div2 {
-  background-color: rgb(28, 223, 113);
-  padding: 5px 5px;
-  }
+
 
 /* nav1 */
 .nav1 {
@@ -130,23 +129,30 @@ body {
 
 /*data dan tentang*/
 #simpan {
+	margin-bottom: 50px;
   text-align: right;
   padding: 3.5px;
   font-family: Arial Narrow;
-  color: white
+  color: white;
 }
 
 /* konten1 */
 .konten1 {
 	display: block;
-  background-color: rgb(117, 117, 117);
-  border-radius: 0 0 230px 0;
-  margin: auto;
-  padding: 3.5px;
-  float: left;
-  width: 30%;
+	font-size: 16px;
+  	float: left;
+	margin: 0;
+	padding: 0;
+  	width: 30%;
 }
+	#teksKonten {
+		padding: 5px 8px;
+		background-color: rgb(117, 117, 117);
+		border-radius: 0 0 230px 0;
+	}
   #tentang2 {
+	display: block;
+	margin: 15px 0 23px 5px;
     font-size: 150%;
     background-image: linear-gradient(rgb(28, 18, 79), rgb(28, 223, 113)); 
     -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
@@ -156,11 +162,41 @@ body {
     background-image: linear-gradient(rgb(28, 18, 79), rgb(28, 223, 113)); 
     -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
   }
+	#kutipanAcak {
+		line-height: 1.6;
+		font-size: 16px;
+		white-space: pre-wrap;
+		color: rgb(28, 18, 79);
+		font-optical-sizing: auto;
+		font-weight: auto;
+		padding: 5px 8px;
+		opacity: 0.8;
+	}
+		#kutipanAcak.fade-out {
+			opacity: 1;
+			transition: opacity 4s ease-in-out;
+		}
+	
+	#tentang4 {
+		display: block;
+		pointer-event: 	none;
+		top: 0;
+		left: 0;
+		background-image: repeating-linear-gradient(
+		#EAFDCF 0px,
+		#EAFDCF 24px,
+		rgb(117, 117, 117) 25px);
+		opacity: 0.7;
+		border: 5px solid rgb(28, 18, 79);
+		
+		z-index: 201;
+	}
 
 /*konten2 */
 .konten2 {
 	display: block;
-  margin: auto;
+	font-size: 16px;
+  margin: 0;
   padding: 3.5px;
   float: left;
   width: 25%;
@@ -168,8 +204,8 @@ body {
   #tentang1 {
     padding: 0px 0px;
   }
-  #update {
-
+  #update a {
+	text-decoration: none;
   }
   #update > h2, p {
     margin: 2px;
@@ -178,13 +214,15 @@ body {
 /*konten3*/
 .konten3 {
 	display: block;
-  margin: auto;
+	font-size: 16px;
+  margin: 0;
   padding: 3.5px;
   float: left;
   width: 25%;
 }
   #acara {
     text-align: center;
+	font-size: 16px;
     background-color: rgb(28, 223, 113);
     border: none;
     color: rgb(90, 90, 90);
@@ -201,6 +239,7 @@ body {
       background-color: rgb(28, 18, 79);
     }
     #acara:active {
+	font-weight: bold;
       background-color: ;
       box-shadow: 0 4.5px rgb(117, 117, 117);
       transform: translateY(4.5px)
@@ -211,6 +250,7 @@ body {
 
   #jadwal {
     text-align: center;
+	font-size: 16px;
     background-color: rgb(28, 223, 113);
     border: none;
     color: rgb(90, 90, 90);
@@ -227,6 +267,7 @@ body {
       background-color: rgb(28, 18, 79);
     }
     #jadwal:active {
+	font-weight: bold;
       background-color: ;
       box-shadow: 0 4.5px rgb(117, 117, 117);
       transform: translateY(4.5px)
@@ -237,6 +278,7 @@ body {
 
   #perpustakaan {
     text-align: center;
+	font-size: 16px;
     background-color: rgb(28, 223, 113);
     border: none;
     color: rgb(90, 90, 90);
@@ -253,6 +295,7 @@ body {
       background-color: rgb(28, 18, 79);
     }
     #perpustakaan:active {
+	font-weight: bold;
       background-color: ;
       box-shadow: 0 4.5px rgb(117, 117, 117);
       transform: translateY(4.5px)
@@ -272,10 +315,11 @@ body {
 
 /* animasi latar belakang */
 .bgcircles {
+	position: absolute;
   background: none;
   background: -webkit-linear-gradient(to left, rgb(28, 18, 79), rgb(28, 223, 113));
-  width: 80%;
   height: 100%;
+	z-index: -1000;
 }
   .circles li {
     position: absolute;
@@ -285,7 +329,7 @@ body {
     height: 20px;
     background: rgba(28, 223, 113, 0.2);
     animation: animate 25s linear infinite;
-    bottom: -500px;
+    bottom: -100px;
   }
     .circles li:nth-child(1) {
       left: 13%;
@@ -377,6 +421,7 @@ body {
   margin: auto;
   float: left;
   width: 25%;
+	font-size: 16px;
   background-color: rgb(117, 117, 117);
   border-radius: 0 150px 0 0;
 }
@@ -386,21 +431,23 @@ body {
   }
   #bantuaku2 {
     padding-top: 20px;
+	padding-bottom: 10px;
     float: left;
-    width: 29.5%;
+    width: 50%;
     /*font*/
+	font-size: 16px;
     font-weight: bold;
-    background-image: linear-gradient(rgb(28, 18, 79), rgb(28, 223, 113)); 
-    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    color: rgb(28, 223, 113);
   }
 
 /* footer */
 .footer {
 	display: table;
+	font-size: 16px;
   background-color: rgb(28, 18, 79);
   color: white;
   width: 100%;
 }
   footer img {
     
-  }
+	}
