@@ -2,11 +2,16 @@
 	margin: 0;
 	padding: 0;
 }
-body {
+html, body {
   	font-family: Arial;
 	background-color: rgba(28, 223, 113, 0.3);
 	cursor: url(''), auto;
+	overflow: scroll;
 }
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+	display: none;
+}
+
 @media (max-width: 768px) {
 	.konten1, .konten2, .konten3 {
 		width: 100%;
