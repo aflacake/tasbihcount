@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasbih Count - DEMO</title>
     <!-- style -->
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/aflacake/tasbihcount/main/img/logo-tasbih-count.ico">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/aflacake/tasbihcount/main/img/logo-tasbih-count.ico" alt="logo Tasbih Count">
     <link rel="stylesheet" href="demostyle.css">
     
   </head>
@@ -11,7 +13,7 @@
 
   <nav>
     <ul class="nav1">
-      <li id="logo"><img src="https://github.com/user-attachments/assets/5d5b080c-1dfe-488e-b798-1ddfb5514650" width="30" height="30"/></li>
+      <li id="logo"><img src="https://github.com/aflacake/tasbihcount/raw/main/img/logo-tasbih-count.png" width="30" height="30"/></li>
       <li id="rumah"><a href="https://aflacake.github.io/tasbihcount/">Tasbih Count</a></li>
       <li id="tentang"><a href="https://github.com/aflacake/tasbihcount/blob/main/README.md">Tentang</a></li>
       <li id="isu"><a href="https://github.com/aflacake/tasbihcount/issues">Isu</a></li>
@@ -21,43 +23,56 @@
 
     <!-- seleksi hitung -->
     <div class="div1">
-      <h1 style="padding: 5px 5px;">Acara DEMO:<br>Subhanallah-Alhamdulillah-Allahu akbar</h1>
+      <h1 style="margin-top: 50px; padding: 5px 5px;">Acara DEMO:<br>Subhanallah-Alhamdulillah-Allahu akbar</h1>
       <h3 id="terhitung"></h3>
 
       <h3>Terhitung:</h3>
-      <h1 id="hitung" style="color: rgb(28, 223, 113);">0</h1>
-      <button id="but" style="font-size: 24px; background-color: rgb(28, 223, 113); border: none; color: rgb(90, 90, 90); padding: 7.5px 10px; margin: 9px; display: inline-block; cursor: pointer; transition: background-color: 0.3s ease, transform: 0.3s ease;">Hitung</button>
-      <button id="reset" onclick="reset()" style="font-size: 14px; background-color: rgb(28, 223, 113); border: none; color: rgb(90, 90, 90); padding: 7.5px 10px; margin: 9px; display: inline-block; cursor: pointer; transition: background-color: 0.3s ease, transform: 0.3s ease;">Reset</button>
+      <h1 id="hitung" style="font-size: 48px; color: rgb(28, 223, 113);">0</h1>
+      <button id="but" style="font-size: 24px; background-color: rgb(28, 223, 113); border: none; color: rgb(90, 90, 90); padding: 30px 48px; margin: 9px; display: inline-block; cursor: pointer; transition: background-color: 0.3s ease, transform: 0.3s ease;">Hitung</button>
+      <button id="reset" onclick="reset()" style="font-size: 16px; background-color: rgb(28, 223, 113); border: none; color: rgb(90, 90, 90); padding: 7.5px 10px; margin: 9px; display: inline-block; cursor: pointer; transition: background-color: 0.3s ease, transform: 0.3s ease;">Reset</button>
       <p id="simpan">*Data hitung Anda tersimpan di localStorage</p>
   </div>
-    <div class="div2"></div>
-<br>
+
     <div class="konten1">
+    <article id="teksKonten">
     <article id="tentang2">
       <h1>Bertasbihlah setelah Salat Fardu sembari memohon permohonan kepada-Nya</h1>
     <article id="tentang3">
       <h1>Subhanallah<br>Alhamdulillah<br>Allhuakbar</h1>
       </article>
     </article>
+ </article>
+    <br />
+
+    <article id="tentang4">
+      <p id="kutipanAcakDemo">Kutipan harian<br />kutipan Al-Quran dan Hadis</p>
+   </article>
     </div>
 
    <div class="konten2">
     <article id="tentang1">
       <p>Apa itu Acara DEMO? Acara DEMO di khususkan dengan perintah acara tasbih tertentu. DEMO belum menunjukkan versi seutuhnya stabil namun Anda dapat menikmatinya.</p>
   </article>
+	<br />
     <article id="update">
     <h2>Apa yang baru?</h2>
-    <ul id="update">
-      <li>UI warna menarik</li>
-      <li>Sekilas ayat Al-Qur'an pertemuan hitungan</li>
-      <li>Konten halaman</li>
-    </ul>
+    <p>Semua histori komitmen terjadi waktu saat ini di <a href="https://github.com/aflacake/tasbihcount/commits/second/"><i><b>commit</b></i></a>, lihat paket tersedia juga. Jangan lupa memeriksa status di Isu terbaru atau urutan terlama</p>
+    </article>
+	<br />
+	<article="mediaSosial">
+	<p>Menyukai pengembangan aplikasi biji manik digital ini?<br />Bagikan di: <br>
+        <ul id="listSosial">
+            <li id="media1"><img width="24" height="24" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/><a href="https://wa.me/?text=Tetaplah%20ingat%20kepada-Nya%20dengan%20alat%20hitung%20tasbih%20digital%20setiap%20genggaman%20Anda,%20di%20GitHub: https://aflacake.github.io/tasbihcount">WhatsApp</a></li>
+            <li id="media2"><img width="24" height="24" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/><a href="https://www.facebook.com/sharer/sharer.php?u=https://aflacake.github.io/tasbihcount">Facebook</a></li>
+    Tetap di jalan Allah!
+        </ul>
+	</article>
   </article>
 </div>
 
 
-  <div class="konten3">
-    <article id="populer">
+
+<div id="populer">
     <h2>Bilangan tasbih populer</h2>
     <ul>
       <li>Allahu akbar</li>
@@ -66,8 +81,7 @@
       <li>Shalawat kepada Nabi Muhammad 1 kali</li>
       <li>Shalawat kepada Nabi Muhammad 10 kali</li>
     </ul>
-    </article>
-  </div>
+ </div>
 
 <div class="bgcircles">
   <ul class="circles">
@@ -94,5 +108,6 @@
 
     <!-- script -->
     <script src="demoscript.js"></script>
+   <script src="notif-pop-up.js"></script>
   </body>
 </html>

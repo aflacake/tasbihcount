@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jadwal Ramadhan</title>
   <!-- style -->
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/aflacake/tasbihcount/main/img/logo-tasbih-count.ico">
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/aflacake/tasbihcount/main/img/logo-tasbih-count.ico" alt="logo Tasbih Count">
   <link rel="stylesheet" href="jadwalstyle.css" />
 </head>
 <body>
@@ -17,19 +19,45 @@
     </ul>
     </nav>
   
-<br>
 
-  <div class="judul">
-    <h1>Jadwal menuju Ramadhan</h1>
-    <p>Rutinitas harian pada saat bulan puasa menuju ke Ramadhan. Hari mencapai kemenangan untuk kita semua, cek daftarnya:</p>
-    <p style="font-size: 14px;">**Ini bukanlah daftar jadwal sesungguhnya, silahkan berkonsultasi kepada orang tempat tinggal di dekat Anda kapan waktunya dan adat kebiasaan harian menuju Ramadhan. Waktu kebiasaan umum tertera pada tabel dan mungkin tidaklah sama</p>
+
+<div class="judul">
+    <h1 style="padding-top: 10px; padding-left: 8px;">Halaman Dasbor</h1>
+    <p style="padding-left: 8px;">Halaman kemajuan aktivitas mengingat bilangan biji tasbih digital Anda, termasuk alat utama lainnya yang tertera disini. Temukan progres analitik dan alat cantik lainnya</p>
+    <p style="padding-left: 8px; font-size: 14px;">Kegiatan harian puasa Ramadhan: **Ini bukanlah daftar jadwal sesungguhnya, silahkan berkonsultasi kepada orang tempat tinggal di dekat Anda kapan waktunya dan adat kebiasaan harian menuju Ramadhan. Waktu kebiasaan umum tertera pada tabel dan mungkin tidaklah sama.</p>
 
     <div class="divjam" align="right">Jam:<p id="jam"></p></div>
     <a class="weatherwidget-io" href="https://forecast7.com/en/n7d80110d37/yogyakarta/" data-label_1="YOGYAKARTA" data-label_2="CUACA" data-font="Arial" data-icons="Climacons Animated" data-theme="pure" data-basecolor="rgb(28, 18, 79)" data-textcolor="rgb(28, 223, 113)" >YOGYAKARTA CUACA</a>
 </div>
 
-  <!-- tabel -->
+
+<!-- progress analitik -->
+    <div class="laporan-harian">
+    <p>Laporan setiap harian, mingguan, dan bulanan berdampak bagi Anda. Lihat progres analitik menjaga pertahanan bilangan biji Anda. Tetap dijalan Allah <br /> Laporan ini digunakan untuk tetap terus memantau Anda, sejauh mana Anda bertasbih mengingat kepadanya. <br /> **Data analitik bersifat pribadi, data yang Anda kirimkan tidak bersifat publik. <br /><br /> Data harian menghitung progress harian Anda, biasanya mereset dari awal setiap pergantian hari<br />Data mingguan, kurung waktu 7 hari Anda dapat mengetahui progress berjalan selama 7 hari<br />Data bulanan, kumulatif semua hasil ketukan tasbih biji digital Anda, selamat mengingat Allah!</p>
+    <div class="proporsisi">
+      <div class="progressH" id="progressHarian">
+      <a>Progress Harian</a>
+          <span id="progress-teksHarian">0/33</span>
+	</div>
+          
+          <div class="progressM" id="progressMingguan">
+          <a>Progress Mingguan</a>
+          <span id="progress-teksMingguan">0/231</span>
+	</div>          
+
+          <div class="progressB" id="progressBulanan">
+          <a>Progress Bulanan</a>
+          <span id="progress-teksBulanan">0/990</span>
+	</div>
+      </div>
+  </div>
+  
+<br />
+
+
+<!-- tabel -->
   <div class="tabeljadwal">
+  <h1>Kegiatan harian puasa Ramadhan</h1>
     <table class="jadwal">
     <tr>
       <th id="jadwal2">Waktu</th>
@@ -87,13 +115,22 @@
       <td id="jadwal3">Sunnah</td>
     </tr>
       <tr>
-      <td id="jadwal3"></td>
+      <td id="jadwal3">-:-</td>
       <td id="jadwal3">Salat Tahajud - sepertiga malam</td>
       <td id="jadwal3">Sunnah</td>
     </tr>
     </table>
   </div>
 
+
+
+    <!-- footer -->
+  <div class="footer">
+    <div style="background-color: rgb(28, 223, 113); padding: 5px 5px;"></div><br>
+    <p>Made by 💚 @aflacake<br>2025-<? php echo date("Y"); ?></p>
+  </div>
+
   <script src="jadwalscript.js"></script>
+ <script src="notif-pop-up.js"></script>
 </body>
 </html>

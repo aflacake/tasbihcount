@@ -1,25 +1,74 @@
-* {
-	padding: 0;
+*  {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+	height: 100vh;
+      font-family: Arial;
+    background-color: rgba(28, 223, 113, 0.3);
+    overflow: hidden;
 }
 body {
-  font-family: Arial;
+	overflow: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none
 }
+body::-webkit-scrollbar {
+	display: none;
+}
+
+
+/* ponsel pintar */
 @media (max-width: 768px) {
-	.konten1, .konten2, .konten3 {
-		width: 100%;
-		margin-bottom: 20px;
-	}
+    .konten1, .konten2, .konten3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .nav1 {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav1 li {
+        width: 19%;
+    }
+    .nav1 li a {
+        padding: 10px;
+        
+    }    
+    #but:active, #reset:active {
+        transform: scale(1);
+        transition-duration: 0.3s ease;
+    }
+    .konten1, .konten2, .konten3 {
+        width: 100%;
+        padding: 10px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        text-align: center;
+        padding: 10px;
+    }
+    .bgcircles {
+        width: 100%;
+        height: auto;
+        .circles li {
+            bottom: 590px;
+        }
+    }
 }
 
 /* counter */
 .div1 {
   /*style*/
   background-color: rgb(28, 18, 79);
-  color: rgb(117, 117, 117);
+  color: white;
   font-family: Arial;
+    border-bottom: 10px solid rgb(28, 223, 113);
 
   /*layout*/
-  margin: auto;
+    margin: auto;
   width: auto;
   height: auto;
   padding: 5px 5px;
@@ -29,22 +78,19 @@ body {
   align-items: center;
   justify-content: center;
 }
-  .div2 {
-  background-color: rgb(28, 223, 113);
-  padding: 5px 5px;
-  }
 
 /* nav1 */
 .nav1 {
-  display: block;
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
-  background-color: rgb(28, 18, 79);
-  box-shadow:
-    rgba(0, 0, 0, 0.9) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: block;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(117, 117, 117);
+    border-bottom: 3px solid rgb(28, 223, 113);
+    box-shadow:
+      rgba(117, 117, 117, 0.9) 0px 4px 7px 0px,
+      rgba(117, 117, 117, 0.15) 0px 0px 0px 4px;
 }
   #rumah {
     float: right;
@@ -58,19 +104,21 @@ body {
   #isu {
     float: left;
   }
-  li a {
+  #rumah a, #tentang a, #isu a {
     display: flex;
-    color: rgb(117, 117, 117);
+    color: rgb(28, 223, 113);
     text-align: center;
     padding: 14px 16px;
+    font-weight: bold;
     text-decoration: none;
   }
-    li a:hover {
+    #rumah a:hover, #tentang a:hover, #isu a:hover {
+      color: rgb(28, 18, 79);
       background-color: rgb(28, 223, 113);
     }
-  li img {
+  #logo img {
   display: flex;
-  color: rgb(117, 117, 117);
+  color: rgb(28, 223, 113);
   text-align: center;
   padding: 9px 9px;
   text-decoration: none;
@@ -91,74 +139,115 @@ body {
 #simpan {
   text-align: right;
   padding: 3.5px;
+  margin-bottom: 100px;
   font-family: Arial Narrow;
   color: white
 }
 
 /* konten1 */
 .konten1 {
-  display: block;
-  background-color: rgb(117, 117, 117);
-  border-radius: 0 0 250px 0;
-  margin: auto;
-  padding: 3.5px;
-  float: left;
-  width: 30%;
+    display: block;
+    font-size: 16px;
+      float: left;
+    margin: 0;
+    padding: 0;
+      width: 48%;
 }
+    #teksKonten {
+        padding: 5px 8px;
+        background-color: rgb(117, 117, 117);
+        border-radius: 0 0 230px 0;
+    }
   #tentang2 {
-      font-size: 150%;
-      background-image: linear-gradient(rgb(28, 18, 79), rgb(28, 223, 113)); 
-      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    margin: 15px 0 23px 5px;
+    font-size: 100%;
+    background-image: linear-gradient(rgb(28, 18, 79), rgb(28, 223, 113)); 
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  #tentang3 {
+    font-size: 150%;
+    background-image: linear-gradient(rgb(28, 18, 79), rgb(28, 223, 113)); 
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+    #kutipanAcakDemo {
+        line-height: 1.6;
+        font-size: 16px;
+        white-space: pre-wrap;
+        color: rgb(28, 18, 79);
+        font-optical-sizing: auto;
+        font-weight: auto;
+        padding: 5px 8px;
+        opacity: 0.8;
     }
-    #tentang3 {
-      font-size: 100%;
-      background-image: linear-gradient(rgb(28, 18, 79), rgb(28, 223, 113)); 
-      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+        #kutipanAcakDemo.fade-out {
+            opacity: 1;
+            transition: opacity 4s ease-in-out;
+        }
+#tentang4 {
+        display: block;
+        pointer-event: none;
+        top: 0;
+        left: 0;
+        background-image: repeating-linear-gradient(
+        #EAFDCF 0px,
+        #EAFDCF 24px,
+        rgb(117, 117, 117) 25px);
+        opacity: 0.7;
+        border: 5px solid rgb(28, 18, 79);
+        
+        z-index: 201;
     }
-
 
 /*konten2 */
 .konten2 {
   display: block;
-  margin: auto;
+  font-size: 16px;
+  margin: 0 0 50px 0;
   padding: 3.5px;
   float: left;
-  width: 25%;
+  width: 45%;
 }
   #tentang1 {
     padding: 0px 0px;
   }
-  #update {
-    
+  #update a {
+    text-decoration: none;
   }
   #update > h2, p {
     margin: 2px;
   }
+#listSosial {
+	margin-left: 25px;
+	list-style-type: square;
+}
+	#listSosial a {
+		text-size: 18px;
+		color: rgb(28, 18, 79);
+		text-decoration: none;
+	}
 
 /*konten3*/
-.konten3 {
-  display: block;
-  margin: auto;
-  padding: 3.5px;
-  float: left;
-  width: 25%;
-}
-  #populer {
+#populer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 210px;
     background-color: rgb(28, 223, 113);
     border-radius: 100px 30px 100px 30px;
     padding: 34px;
     width: 170px;
-  }
-  #populer > h2, p {
+}
+#populer h2, #populer p {
     margin: 2px;
   }
 
 /* animasi latar belakang */
 .bgcircles {
+    position: absolute;
   background: none;
   background: -webkit-linear-gradient(to left, rgb(28, 18, 79), rgb(28, 223, 113));
-  width: 80%;
-  height: 100%;
+  height: 50%;
+    z-index: -1000;
 }
   .circles li {
     position: absolute;
@@ -168,76 +257,76 @@ body {
     height: 20px;
     background: rgba(28, 223, 113, 0.2);
     animation: animate 25s linear infinite;
-    bottom: -500px;
+    bottom: 20px;
   }
     .circles li:nth-child(1) {
       left: 13%;
       width: 80px;
       height: 80px;
-	animation-delay: 2s;
+    animation-delay: 2s;
       animation-duration: 4s;
     }
     .circles li:nth-child(2) {
       left: 10%;
       width: 20px;
       height: 20px;
-	animation-delay: 4s;
+    animation-delay: 4s;
       animation-duration: 7s;
     }
     .circles li:nth-child(3) {
       left: 25%;
       width: 60px;
       height: 60px;
-	animation-delay: 2s;
+    animation-delay: 2s;
       animation-duration: 9s;
     }   
     .circles li:nth-child(4) {
       left: 12%;
       width: 60px;
       height: 60px;
-	animation-delay: 2s;
+    animation-delay: 2s;
       animation-duration: 16s;
     }
     .circles li:nth-child(5) {
       left: 15%;
       width: 20px;
       height: 20px;
-	animation-delay: 4s;
+    animation-delay: 4s;
       animation-duration: 12s;
     }
     .circles li:nth-child(6) {
       left: 5%;
       width: 110px;
       height: 110px;
-	animation-delay: 2s;
+    animation-delay: 2s;
       animation-duration: 11s;
     }
     .circles li:nth-child(7) {
       left: 2%;
       width: 150px;
       height: 150px;
-	animation-delay: 4s;
+    animation-delay: 4s;
       animation-duration: 9s;
     }   
     .circles li:nth-child(8) {
       left: 22%;
       width: 25px;
       height: 25px;
-	animation-delay: 2s;
+    animation-delay: 2s;
       animation-duration: 8s;
     }
     .circles li:nth-child(9) {
       left: 8%;
       width: 15px;
       height: 15px;
-	animation-delay: 2s;
+    animation-delay: 2s;
       animation-duration: 6s;
     }
     .circles li:nth-child(10) {
       left: 17%;
       width: 150px;
       height: 150px;
-	animation-delay: 4s;
+    animation-delay: 4s;
       animation-duration: 10s;
     }
   @keyframes animate {
@@ -254,15 +343,17 @@ body {
       border-radius: 20%;
     }
   }
-
+  
 
 /* footer */
 .footer {
-  display: table;
+    display: block;
+	float: center;
+	padding: 10px;
+    font-size: 16px;
   background-color: rgb(28, 18, 79);
   color: white;
-  width: 100%;
 }
   footer img {
     
-  }
+    }

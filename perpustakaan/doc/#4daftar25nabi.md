@@ -24,5 +24,16 @@ Lompat ke: <a href="#nabiadam">Nabi Adam</a>,
 
 <h2 id="nabiluth">Nabi Luth</h2>
 
+<h2 id="nabiismail">Nabi Ismail</h2>
+
+<h2 id="nabiishak">Nabi Ishak</h2>
+
+<h2 id="nabiyakub">Nabi Yakub</h2>
+
+<h2 id="nabiyusuf">Nabi Yusuf</h2>
+
+<h2 id="nabisyu'aib">Nabi Syu'aib</h2>
+
+<h2 id="nabiluth">Nabi Luth</h2>
 
 <h3>Daftar Pusaka</h3>
