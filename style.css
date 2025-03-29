@@ -1,59 +1,88 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 html, body {
-  	font-family: Arial;
-	background-color: rgba(28, 223, 113, 0.3);
-	cursor: url(''), auto;
-	overflow: scroll;
+	height: 100vh;
+      font-family: Arial;
+    background-color: rgba(28, 223, 113, 0.3);
+    overflow: hidden;
 }
-html::-webkit-scrollbar, body::-webkit-scrollbar {
+body {
+	overflow: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none
+}
+body::-webkit-scrollbar {
 	display: none;
 }
 
+
 @media (max-width: 768px) {
-	.konten1, .konten2, .konten3 {
-		width: 100%;
-	margin-bottom: 20px;
+    .konten1, .konten2, .konten3 {
+        width: 100%;
+    	margin-bottom: 20px;
+    }
+    #acara, #perpustakaan {
+        width: 100%;
+    }
+    .nav1 {
+	width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .nav1 li {
+        width: 19%;
+    }
+    .nav1 li a {
+        padding: 10px;
+        
+    }
+    #but:active, #reset:active {
+        transform: scale(1);
+        transition-duration: 0.3s ease;
+    }
+    .konten1, .konten2, .konten3 {
+        width: 100%;
+        padding: 10px;
+    }
+    #populer {
+        width: 30%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 200px;
+        margin-left: 180px;
+    }
+    .garpuaku {
+	display: table;
+        width: 100%;
+        margin: auto;
+    }
+        #bantuaku2 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 20px;
+            float: left;
+            width: 60%;
+        }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        text-align: center;
+        padding: 10px;
+    }
+    .bgcircles {
+        width: 100%;
+        height: auto;
+        .circles li {
+            bottom: 450px;
+        }
+	.circles li {
+		bottom: -20px;
 	}
-	#acara, #perpustakaan {
-		width: 100%;
-	}
-	.nav1 {
-		display: flex;
-		flex-direction: column;
-	}
-	.nav1 li {
-		width: 100%;
-		text-align: center;
-	}
-	.nav1 li a {
-		padding: 10px;
-		display: block;
-		text-align: center;
-	}
-	#but:active, #reset:active {
-		transform: scale(1);
-		transition-duration: 0.3s ease;
-	}
-	.konten1, .konten2, .konten3 {
-		width: 100%;
-		padding: 10px;
-	}
-	.garpuaku {
-		width: 100%;
-		margin: auto;
-	}
-	.footer {
-		width: 100%;
-		text-align: center;
-		padding: 10px;
-	}
-	.bgcircles {
-		width: 100%;
-		height: auto;
-	}
+    }
 }
 
 /* counter */
@@ -62,10 +91,10 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   background-color: rgb(28, 18, 79);
   color: white;
   font-family: Arial;
-	border-bottom: 10px solid rgb(28, 223, 113);
+    border-bottom: 10px solid rgb(28, 223, 113);
 
   /*layout*/
-	margin: auto;
+    margin: auto;
   width: auto;
   height: auto;
   padding: 5px 5px;
@@ -79,13 +108,13 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
 /* nav1 */
 .nav1 {
-	display: block;
+    display: block;
   list-style: none;
   margin: 0px;
   padding: 0px;
   overflow: hidden;
   background-color: rgb(117, 117, 117);
-	border-bottom: 3px solid rgb(28, 223, 113);
+    border-bottom: 3px solid rgb(28, 223, 113);
   box-shadow:
     rgba(117, 117, 117, 0.9) 0px 4px 7px 0px,
     rgba(117, 117, 117, 0.15) 0px 0px 0px 4px;
@@ -102,7 +131,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   #isu {
     float: left;
   }
-  li a {
+  #rumah a, #tentang a, #isu a {
     display: flex;
     color: rgb(28, 223, 113);
     text-align: center;
@@ -110,11 +139,11 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     font-weight: bold;
     text-decoration: none;
   }
-    li a:hover {
+    #rumah a:hover, #tentang a:hover, #isu a:hover {
       color: rgb(28, 18, 79);
       background-color: rgb(28, 223, 113);
     }
-  li img {
+  #logo img {
   display: flex;
   color: rgb(28, 223, 113);
   text-align: center;
@@ -134,7 +163,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
 /*data dan tentang*/
 #simpan {
-	margin-bottom: 50px;
+    margin-bottom: 100px;
   text-align: right;
   padding: 3.5px;
   font-family: Arial Narrow;
@@ -143,21 +172,21 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
 /* konten1 */
 .konten1 {
-	display: block;
-	font-size: 16px;
-  	float: left;
-	margin: 0;
-	padding: 0;
-  	width: 30%;
+    display: block;
+    font-size: 16px;
+      float: left;
+    margin: 0;
+    padding: 0;
+      width: 48%;
 }
-	#teksKonten {
-		padding: 5px 8px;
-		background-color: rgb(117, 117, 117);
-		border-radius: 0 0 230px 0;
-	}
+    #teksKonten {
+        padding: 5px 8px;
+        background-color: rgb(117, 117, 117);
+        border-radius: 0 0 230px 0;
+    }
   #tentang2 {
-	display: block;
-	margin: 15px 0 23px 5px;
+    display: block;
+    margin: 15px 0 23px 5px;
     font-size: 150%;
     background-image: linear-gradient(rgb(28, 18, 79), rgb(28, 223, 113)); 
     -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
@@ -167,164 +196,187 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     background-image: linear-gradient(rgb(28, 18, 79), rgb(28, 223, 113)); 
     -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
   }
-	#kutipanAcak {
-		line-height: 1.6;
-		font-size: 16px;
-		white-space: pre-wrap;
-		color: rgb(28, 18, 79);
-		font-optical-sizing: auto;
-		font-weight: auto;
-		padding: 5px 8px;
-		opacity: 0.8;
-	}
-		#kutipanAcak.fade-out {
-			opacity: 1;
-			transition: opacity 4s ease-in-out;
-		}
-	
-	#tentang4 {
-		display: block;
-		pointer-event: 	none;
-		top: 0;
-		left: 0;
-		background-image: repeating-linear-gradient(
-		#EAFDCF 0px,
-		#EAFDCF 24px,
-		rgb(117, 117, 117) 25px);
-		opacity: 0.7;
-		border: 5px solid rgb(28, 18, 79);
-		
-		z-index: 201;
-	}
+    #kutipanAcak {
+        line-height: 1.6;
+        font-size: 16px;
+        white-space: pre-wrap;
+        color: rgb(28, 18, 79);
+        font-optical-sizing: auto;
+        font-weight: auto;
+        padding: 5px 8px;
+        opacity: 0.8;
+    }
+        #kutipanAcak.fade-out {
+            opacity: 1;
+            transition: opacity 4s ease-in-out;
+        }
+    
+    #tentang4 {
+        display: block;
+        pointer-event:     none;
+        top: 0;
+        left: 0;
+        background-image: repeating-linear-gradient(
+        #EAFDCF 0px,
+        #EAFDCF 24px,
+        rgb(117, 117, 117) 25px);
+        opacity: 0.7;
+        border: 5px solid rgb(28, 18, 79);
+        
+        z-index: 201;
+    }
 
 /*konten2 */
 .konten2 {
-	display: block;
-	font-size: 16px;
-  margin: 0;
+    display: block;
+    font-size: 16px;
+  margin: 0 0 50px 8px;
   padding: 3.5px;
   float: left;
-  width: 25%;
+  width: 45%;
 }
   #tentang1 {
     padding: 0px 0px;
   }
   #update a {
-	text-decoration: none;
+    text-decoration: none;
   }
   #update > h2, p {
     margin: 2px;
   }
+#listSosial {
+	margin-left: 25px;
+	list-style-type: square;
+}
+	#listSosial a {
+		text-size: 18px;
+		color: rgb(28, 18, 79);
+		text-decoration: none;
+	}
 
 /*konten3*/
 .konten3 {
-	display: block;
-	font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
   margin: 0;
   padding: 3.5px;
   float: left;
-  width: 25%;
+  width: 40%;
 }
   #acara {
     text-align: center;
-	font-size: 16px;
+    font-size: 16px;
     background-color: rgb(28, 223, 113);
     border: none;
     color: rgb(90, 90, 90);
     padding: 7.5px 10px;
     padding-left: 25px;
     padding-right: 25px;
-    margin: 9px;
+    margin: 6px;
     box-shadow: 0 9px rgb(117, 117, 117);
     display: inline-block;
     cursor: pointer;
   }
     #acara:hover {
-	color: rgb(28, 223, 113);
+    color: rgb(28, 223, 113);
       background-color: rgb(28, 18, 79);
     }
     #acara:active {
-	font-weight: bold;
+    font-weight: bold;
       background-color: ;
       box-shadow: 0 4.5px rgb(117, 117, 117);
       transform: translateY(4.5px)
     }
   #ketdemo {
+    padding-left: 25px;
+    padding-right: 25px;
     border-bottom: 5px solid rgb(28, 223, 113);
   }
 
   #jadwal {
     text-align: center;
-	font-size: 16px;
+    font-size: 16px;
     background-color: rgb(28, 223, 113);
     border: none;
     color: rgb(90, 90, 90);
     padding: 7.5px 10px;
     padding-left: 25px;
     padding-right: 25px;
-    margin: 9px;
+    margin: 6px;
     box-shadow: 0 9px rgb(117, 117, 117);
     display: inline-block;
     cursor: pointer;
   }
     #jadwal:hover {
-	color: rgb(28, 223, 113);
+    color: rgb(28, 223, 113);
       background-color: rgb(28, 18, 79);
     }
     #jadwal:active {
-	font-weight: bold;
+    font-weight: bold;
       background-color: ;
       box-shadow: 0 4.5px rgb(117, 117, 117);
       transform: translateY(4.5px)
     }
   #ketjadwal {
+    padding-left: 25px;
+    padding-right: 25px;
     border-bottom: 5px solid rgb(28, 223, 113);
   }
 
   #perpustakaan {
     text-align: center;
-	font-size: 16px;
+    font-size: 16px;
     background-color: rgb(28, 223, 113);
     border: none;
     color: rgb(90, 90, 90);
     padding: 7.5px 10px;
     padding-left: 25px;
     padding-right: 25px;
-    margin: 9px;
+    margin: 6px;
     box-shadow: 0 9px rgb(117, 117, 117);
     display: inline-block;
     cursor: pointer;
   }
     #perpustakaan:hover {
-	color: rgb(28, 223, 113);
+    color: rgb(28, 223, 113);
       background-color: rgb(28, 18, 79);
     }
     #perpustakaan:active {
-	font-weight: bold;
+    font-weight: bold;
       background-color: ;
       box-shadow: 0 4.5px rgb(117, 117, 117);
       transform: translateY(4.5px)
     }
   #ketperpus {
+    padding-left: 25px;
+    padding-right: 25px;
     border-bottom: 5px solid rgb(28, 223, 113);
   }
+  
+  /*tasbih populer*/
   #populer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+    margin-left: 180px;
     background-color: rgb(28, 223, 113);
     border-radius: 100px 30px 100px 30px;
     padding: 34px;
-    width: 170px;
+    
   }
-  #populer > h2, p {
+  #populer h2, #populer p {
     margin: 2px;
   }
 
 /* animasi latar belakang */
 .bgcircles {
-	position: absolute;
+    position: absolute;
   background: none;
   background: -webkit-linear-gradient(to left, rgb(28, 18, 79), rgb(28, 223, 113));
-  height: 100%;
-	z-index: -1000;
+  height: 50%;
+    z-index: -1000;
 }
   .circles li {
     position: absolute;
@@ -334,76 +386,76 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     height: 20px;
     background: rgba(28, 223, 113, 0.2);
     animation: animate 25s linear infinite;
-    bottom: -100px;
+    bottom: -20px;
   }
     .circles li:nth-child(1) {
       left: 13%;
       width: 80px;
       height: 80px;
-	animation-delay: 2s;
+    animation-delay: 2s;
       animation-duration: 4s;
     }
     .circles li:nth-child(2) {
       left: 10%;
       width: 20px;
       height: 20px;
-	animation-delay: 4s;
+    animation-delay: 4s;
       animation-duration: 7s;
     }
     .circles li:nth-child(3) {
       left: 25%;
       width: 60px;
       height: 60px;
-	animation-delay: 2s;
+    animation-delay: 2s;
       animation-duration: 9s;
     }   
     .circles li:nth-child(4) {
       left: 12%;
       width: 60px;
       height: 60px;
-	animation-delay: 2s;
+    animation-delay: 2s;
       animation-duration: 16s;
     }
     .circles li:nth-child(5) {
       left: 15%;
       width: 20px;
       height: 20px;
-	animation-delay: 4s;
+    animation-delay: 4s;
       animation-duration: 12s;
     }
     .circles li:nth-child(6) {
       left: 5%;
       width: 110px;
       height: 110px;
-	animation-delay: 2s;
+    animation-delay: 2s;
       animation-duration: 11s;
     }
     .circles li:nth-child(7) {
       left: 2%;
       width: 150px;
       height: 150px;
-	animation-delay: 4s;
+    animation-delay: 4s;
       animation-duration: 9s;
     }   
     .circles li:nth-child(8) {
       left: 22%;
       width: 25px;
       height: 25px;
-	animation-delay: 2s;
+    animation-delay: 2s;
       animation-duration: 8s;
     }
     .circles li:nth-child(9) {
       left: 8%;
       width: 15px;
       height: 15px;
-	animation-delay: 2s;
+    animation-delay: 2s;
       animation-duration: 6s;
     }
     .circles li:nth-child(10) {
       left: 17%;
       width: 150px;
       height: 150px;
-	animation-delay: 4s;
+    animation-delay: 4s;
       animation-duration: 10s;
     }
   @keyframes animate {
@@ -423,36 +475,38 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
 /*Fork*/
 .garpuaku {
-  margin: auto;
+  margin: 0;
   float: left;
-  width: 25%;
-	font-size: 16px;
+  width: 60%;
+    font-size: 16px;
   background-color: rgb(117, 117, 117);
   border-radius: 0 150px 0 0;
 }
   #forkme {
     float: left;
-    width: 31.5%;
+    width: 50%;
   }
   #bantuaku2 {
-    padding-top: 20px;
-	padding-bottom: 10px;
+    padding-bottom: 4px;
+	margin-top:-30px;
+	margin-left: 40px;
     float: left;
-    width: 50%;
+    width: 60%;
     /*font*/
-	font-size: 16px;
+    font-size: 16px;
     font-weight: bold;
     color: rgb(28, 223, 113);
   }
 
 /* footer */
 .footer {
-	display: table;
-	font-size: 16px;
+    display: block;
+	float: center;
+	padding: 10px;
+    font-size: 16px;
   background-color: rgb(28, 18, 79);
   color: white;
-  width: 100%;
 }
   footer img {
     
-	}
+    }
