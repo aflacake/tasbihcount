@@ -1,61 +1,3 @@
-//notifikasi halaman utama
-﻿function checkNotificationPermission() {
-    const permissionStatus = localStorage.getItem("notificationPermission");
-
-    if (permissionStatus === "granded") {
-         console.log("sudah diizinkan sebelumnya");
-        return true;
-    }
-    if (permissionStatus != "granded") {
-        requestNotificationPermission();
-    }
-    return false;
-}
-
-function requestNotificationPermission() {
-    Notification.requestPermission().then(permission => {
-        if (permission === "granded") {
-            console.log("Notifikasi granded!");
-            localStorage.setItem("notificationPermission", "granded");
-        }
-    });
-}
-
-function sendNotification(message) {
-    if (Notification.permission === "granded") {
-        new Notification(message);
-    }
-}
-
-function checkAndSendReminderTasbih() {
-    const sekarangRemind = new Date();
-    const jamRemind = sekarangRemind.getHours();
-    const menitRemind = sekarangRemind.getMinutes();
-
-    if (jamRemind === 5 && menitRemind === 0) {
-        sendNotification("Waktunya dzikir Subuh! mulai ambil Tasbih Count untuk melacak proses Anda.");
-    } else if (jamRemind === 12 && menitRemind === 0) {
-        sendNotification("Waktunya dzikir Zuhur! mulai ambil Tasbih Count untuk melacak proses Anda.");
-    } else if (jamRemind === 15 && menitRemind === 0) {
-        sendNotification("Waktunya dzikir Asar! mulai ambil Tasbih Count untuk melacak proses Anda.");
-    } else if (jamRemind === 18 && menitRemind === 0) {
-        sendNotification("Waktunya dzikir Maghrib! mulai ambil Tasbih Count untuk melacak proses Anda.");
-    } else if (jamRemind === 19 && menitRemind === 0) {
-        sendNotification("Waktunya dzikir Isya'! mulai ambil Tasbih Count untuk melacak proses Anda.");
-    }
-}
-
-function mulaiMengingat() {
-    setInterval(checkAndSendReminder, 60000);
-}
-if (checkNotificationPermission()) {
-    mulaiMengingat();
-    } else {
-        requestNotificationPermission();
-}
-
-
-
 document.addEventListener("DOMContentLoaded", function() {
 //mengambil id
 const but = document.querySelector("#but");
@@ -71,38 +13,38 @@ const maxCost = 100000;
 
 function raz() {
   if(jumlah < maxCost) {
-  	jumlah++;
-  	hitung.textContent = jumlah;
-  	localStorage.setItem('jumlah', jumlah);
+      jumlah++;
+      hitung.textContent = jumlah;
+      localStorage.setItem('jumlah', jumlah);
   }
 
 if (jumlah === 33 && !localStorage.getItem("33")) {
   terhitung.textContent = "Terhitung 33. Maka bersabarlah engkau (Muhammad) terhadap apa yang mereka katakan dan bertasbihlah dengan memuji Tuhanmu sebelum matahari terbit dan sebelum terbenam. (Q.S. Qaf: 39)";
-	localStorage.setItem("33", "true");
+    localStorage.setItem("33", "true");
  }
 if (jumlah === 66 && !localStorage.getItem("66")) {
   terhitung.textContent = "Terhitung 66. (yaitu) orang-orang yang beriman dan hati mereka menjadi tentram dengan mengingat Allah. Ingatlah, hanya dengan mengingat Allah hati menjadi tentram. (Q.S. Ar-Ra'd)";
-	localStorage.setItem("66", "true");
+    localStorage.setItem("66", "true");
  }
 if (jumlah === 99 && !localStorage.getItem("99")) {
   terhitung.textContent = "Terhitung 99. Wahai orang-orang beriman, ingatlah Allah dengan zikir sebanyak-banyaknya. (Q.S. Al-Ahzab: 41)";
-	localStorage.setItem("99", "true");
+    localStorage.setItem("99", "true");
  }
 if (jumlah === 100 && !localStorage.getItem("100")) {
   terhitung.textContent = "Terhitung 100. Langit yang tujuh, bumi dan semua yang ada di dalamnya bertasbih kepada Allah. Dan tidak ada sesuatu pun melainkan bertasbih dengan memuji-Nya, tetapi kamu tidak mengerti tasbih mereka. Sungguh Dia Maha Penyantun, Maha Pengampun (Q.S. Al-Isra': 44)";
-	localStorage.setItem("100", "true");
+    localStorage.setItem("100", "true");
  }
  if (jumlah === 1000 && !localStorage.getItem("1000")) {
   terhitung.textContent = "Terhitung 1000. Wahai orang-orang beriman, ingatlah Allah dengan zikir sebanyak-banyaknya. (Q.S. Al-Ahzab: 41)";
-	localStorage.setItem("1000", "true");
+    localStorage.setItem("1000", "true");
  }
  if (jumlah === 3000 && !localStorage.getItem("3000")) {
   terhitung.textContent = "Terhitung 3000. Wahai orang-orang beriman, ingatlah Allah dengan zikir sebanyak-banyaknya. (Q.S. Al-Ahzab: 41)";
-	localStorage.setItem("3000", "true");
+    localStorage.setItem("3000", "true");
  }
  if (jumlah === 99999 && !localStorage.getItem("99999")) {
   terhitung.textContent = "Terhitung 99999. Berkat rahmat-Nya, Dia jadikan untukmu malam dan siang agar kamu beristirahat pada malam hari, agar kamu mencari sebagian karunia-Nya (pada siang hari), dan agar kamu bersyukur kepada-Nya (Q.S. Al-Qashash: 73)";
-	localStorage.setItem("99999", "true");
+    localStorage.setItem("99999", "true");
  }
 }
 
@@ -111,14 +53,14 @@ but.onclick = raz;
 
 
 function reset() {
-	localStorage.removeItem('jumlah');
-	localStorage.removeItem('33');
-	localStorage.removeItem('66');
-	localStorage.removeItem('99');
-	localStorage.removeItem('100');
-	localStorage.removeItem('1000');
-	localStorage.removeItem('3000');
-	localStorage.removeItem('99999');
+    localStorage.removeItem('jumlah');
+    localStorage.removeItem('33');
+    localStorage.removeItem('66');
+    localStorage.removeItem('99');
+    localStorage.removeItem('100');
+    localStorage.removeItem('1000');
+    localStorage.removeItem('3000');
+    localStorage.removeItem('99999');
   jumlah = 0;
   hitung.innerHTML = jumlah;
   terhitung.textContent = '';
