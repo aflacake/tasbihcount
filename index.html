@@ -25,10 +25,10 @@
     <div class="div1">
       <h3 id="terhitung" style="margin-top: 50px;"></h3>
 
-      <h3>Terhitung:</h3>
+      <h3 style="margin-top: 50px;">Terhitung:</h3>
       <h1 id="hitung" style="font-size: 48px; color: rgb(28, 223, 113);">0</h1>
       <button id="but" style="font-size: 24px; background-color: rgb(28, 223, 113); border: none; color: rgb(90, 90, 90); padding: 30px 48px; margin: 9px; display: inline-block; cursor: pointer; transition: background-color: 0.3s ease, transform: 0.3s ease;">Hitung</button>
-      <button id="reset" onclick="reset()" style="font-size: 16px; background-color: rgb(28, 223, 113); border: none; color: rgb(90, 90, 90); padding: 7.5px 10px; margin: 9px; display: inline-block; cursor: pointer; transition: background-color: 0.3s ease, transform: 0.3s ease">Reset</button>
+      <button id="reset" onclick="reset()" style="font-size: 16px; background-color: rgb(28, 223, 113); border: none; color: rgb(90, 90, 90); padding: 7.5px 10px; margin: 9px; display: inline-block; cursor: pointer; transition: background-color: 0.3s ease, transform: 0.3s ease;">Reset</button>
       <p id="simpan">*Data hitung Anda tersimpan di localStorage</p>
   </div>
 
@@ -52,10 +52,20 @@
    <div class="konten2">
     <article id="tentang1">
       <p style="margin-top: 20px;">Tasbih Count alat menghitung dengan 33 bilangan digital secara konsisten: 33, 66, 99, total keseluruhan 100 seperti bilangan biji manik atau lainnya. Dalam ISLAM, jumlah manik umumnya 100, namun tidak terbatas Anda mengingat kepada sang pencipta.</p>
+	<br />
     <article id="update">
     <h2>Apa yang baru?</h2>
     <p>Semua histori komitmen terjadi waktu saat ini di <a href="https://github.com/aflacake/tasbihcount/commits/second/"><i><b>commit</b></i></a>, lihat paket tersedia juga. Jangan lupa memeriksa status di Isu terbaru atau urutan terlama</p>
     </article>
+	<br />
+	<article="mediaSosial">
+	<p>Menyukai pengembangan aplikasi biji manik digital ini?<br />Bagikan di: <br>
+        <ul id="listSosial">
+            <li id="media1"><img width="24" height="24" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/><a href="https://wa.me/?text=Tetaplah%20ingat%20kepada-Nya%20dengan%20alat%20hitung%20tasbih%20digital%20setiap%20genggaman%20Anda,%20di%20GitHub: https://aflacake.github.io/tasbihcount">WhatsApp</a></li>
+            <li id="media2"><img width="24" height="24" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/><a href="https://www.facebook.com/sharer/sharer.php?u=https://aflacake.github.io/tasbihcount">Facebook</a></li>
+    Tetap di jalan Allah!
+        </ul>
+	</article>
   </article>
 </div>
 
@@ -69,9 +79,9 @@
   <br>
       <article id="">
       <a href="https://aflacake.github.io/tasbihcount/jadwal/jadwalindex.html" style="outline: none; color: rgb(90, 90, 90);">
-        <button id="jadwal">Jadwal Ramadhan</button>
+        <button id="jadwal">Dasbor</button>
       </a>
-      <p id="ketjadwal">Tabel waktu dan dilengkapi cuaca serta jam lokal.</p>
+      <p id="ketjadwal">Halaman pengguna, data analitik, dilengkapi cuaca serta jam lokal.</p>
     </article>
     <article id="">
       <a href="https://github.com/aflacake/tasbihcount/tree/main/perpustakaan" style="outline: none; color: rgb(90, 90, 90);">
@@ -79,8 +89,9 @@
       </a>
       <p id="ketperpus">Media dan artikel yang mungkin menarik bagi Anda.</p>
     </article>
-  <br>
-    <article id="populer">
+  </div>
+
+<div id="populer">
     <h2>Bilangan tasbih populer</h2>
     <ul>
       <li>Allahu akbar</li>
@@ -89,9 +100,9 @@
       <li>Shalawat kepada Nabi Muhammad 1 kali</li>
       <li>Shalawat kepada Nabi Muhammad 10 kali</li>
     </ul>
-    </article>
-  </div>
+    </div>
 
+<br />
   <div class="garpuaku">
     <article>
       <a id="forkme" href="https://github.com/aflacake/tasbihcount"><img decoding="async" width="74.5" height="74.5" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_green_007200.png" class="attachment-full size-full" alt="Fork me on GitHub" loading="lazy"></a>
@@ -122,5 +133,6 @@
 
     <!-- script -->
     <script src="script.js"></script>
+  <script src="notif-pop-up.js"></script>
   </body>
 </html>
