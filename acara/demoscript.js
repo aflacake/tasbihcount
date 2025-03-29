@@ -38,9 +38,40 @@ but.onclick = raz;
 function reset() {
   jumlahdemo = 0;
   hitung.innerHTML = jumlahdemo;
-	terhitung.textContent = '';
-	localStorage.removeItem('jumlahdemo', jumlahdemo);
-  	console.log("Reset: " + jumlahdemo)
+    terhitung.textContent = '';
+    localStorage.removeItem('jumlahdemo', jumlahdemo);
+      console.log("Reset: " + jumlahdemo)
 }
-	resetBtn.onclick = reset;
+    resetBtn.onclick = reset;
 });
+
+
+
+const kutipanDemo = ["Salat didirikan 5 waktu.", "Perintah Salat diturunkan saat Isra' Mi'raj.", "Waktu zuhur dilihat dari bayangan tombak setinggi tombak.", "Kata ISLAM berasal dari salat 5 waktu.", "Nabi Muhammad adalah nabi dan utusan-Nya.", "Sujud Sahwi dilakukan ketika ada keraguan.", "Tidak ada yang mengetahui waktu hari kiamat, kecuali Allah.", "Nabi Ilyas menunjukkan Allah sebenarnya di Gunung Karmel, Israel"];
+let kutipanTampilDemoSebelumnya = "";
+
+function tampilKutipanAcakDemo() {
+    const randomKutipanDemo = Math.floor(Math.random() * kutipanDemo.length);
+    const kutipanAcakDemo = kutipanDemo[randomKutipanDemo];
+    document.getElementById("kutipanAcakDemo").textContent = kutipanAcakDemk;
+    const kutipanTransisiDemo = document.getElementById("kutipanAcakDemo");
+
+    if (kutipanAcakDemo !== kutipanTampilDemoSebelumnya) {
+    if (kutipanTransisiDemo) {
+    kutipanTransisiDemo.classList.add("fade-out");
+
+    setTimeout(() => {
+        kutipanTransisiDemo.textContent = kutipanAcakDemo;
+        kutipanTransisiDemo.classList.remove("fade-out");
+    }, 4000);
+  }
+ }
+}
+
+    function setKutipanDemoRandom() {
+        const waktuKutipAcakDemo = Math.floor(Math.random() * (33000 - 17000 + 1)) + 17000;
+        setInterval(() => {
+            tampilKutipanAcakDemo();
+        }, waktuKutipAcakDemo);
+    }
+    setKutipanDemoRandom();
