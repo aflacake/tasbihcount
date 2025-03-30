@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<title>Tasbih Count</title>
+<config>
+	<body>
+		<font>Arial</font>
+	</body>
+	<languange>
+		<currentLanguage>id</currentLanguage>
+	</languange>
+</config>
