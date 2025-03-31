@@ -54,6 +54,7 @@ if (checkNotificationPermission()) {
     mulaiMengingat();
     } else {
         requestNotificationPermission();
+	alert('Izinkan untuk mengingat jadwal 5 waktu');
 }
 
 
@@ -64,3 +65,21 @@ if (!localStorage.getItem("panduanPopUp")) {
     // satu kali
     localStorage.setItem("panduanPopUp", "true");
 }
+
+
+
+
+//status koneksi
+document.addEventListener("DOMContentLoaded", function() {
+function checkConnection() {
+    const tidakAdaKoneksiDiv = document.getElementById("tidakAdaKoneksi");
+    if (navigator.onLine) {
+        tidakAdaKoneksiDiv.style.display="none";
+    } else {
+        tidakAdaKoneksiDiv.style.display="block";
+    }
+}
+checkConnection();
+window.addEventListener('online', checkConnection);
+window.addEventListener('offline', checkConnection);
+});
