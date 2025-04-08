@@ -9,6 +9,7 @@ if('serviceWorker' in navigator) {
 }
 
 
+
 document.addEventListener("DOMContentLoaded", function() {
 //mengambil id
 const but = document.querySelector("#but");
@@ -99,6 +100,7 @@ function tampilKutipanAcak() {
     setTimeout(() => {
         kutipanTransisi.textContent = kutipanAcak;
         kutipanTransisi.classList.remove("fade-out");
+        kutipanTampilSebelumnya = kutipan;
     }, 4000);
   }
  }
