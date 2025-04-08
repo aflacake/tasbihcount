@@ -53,7 +53,7 @@ let kutipanTampilDemoSebelumnya = "";
 function tampilKutipanAcakDemo() {
     const randomKutipanDemo = Math.floor(Math.random() * kutipanDemo.length);
     const kutipanAcakDemo = kutipanDemo[randomKutipanDemo];
-    document.getElementById("kutipanAcakDemo").textContent = kutipanAcakDemk;
+    document.getElementById("kutipanAcakDemo").textContent = kutipanAcakDemo;
     const kutipanTransisiDemo = document.getElementById("kutipanAcakDemo");
 
     if (kutipanAcakDemo !== kutipanTampilDemoSebelumnya) {
@@ -63,6 +63,7 @@ function tampilKutipanAcakDemo() {
     setTimeout(() => {
         kutipanTransisiDemo.textContent = kutipanAcakDemo;
         kutipanTransisiDemo.classList.remove("fade-out");
+        kutipanTampilDemoSebelumnya = kutipanDemo;
     }, 4000);
   }
  }

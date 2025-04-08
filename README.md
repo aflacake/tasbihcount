@@ -15,9 +15,11 @@ Tasbih Count mengadakan acara (umum) waktu mengingat Allah, menandai kemajuan sa
 
 
 # Instalasi
-Tidak membutuhkan yang diperlukan, deploy halaman disiapkan atau unduh paket tertera.\
-Deploy:  https://aflacake.github.io/tasbihcount/
+Aplikasi: aplikasi-web
+> Tidak membutuhkan yang diperlukan, deploy halaman disiapkan atau unduh paket tertera.
 
+Deploy:  **https://aflacake.github.io/tasbihcount/**
+Online/offline: online dan offline
 
 # Berkontribusi
 Ini adalah proyek mandiriku [@aflacake](https://github.com/aflacake), namun mungkin ada kontibutor, status diluar pemegang, dan penulis tertulis. Berkontak dengan Saya permintaannya perizinan aturan atau Anda sebagai kontributor saja.

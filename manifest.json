@@ -1,0 +1,21 @@
+{
+	"name": "Tasbih Count",
+	"short_name": "TC",
+	"description": "Alat tasbih penghitung mengetahui pelacakan dimana Anda sampai sejauh mana"
+	"start_url": "https://aflacake.github.io/tasbihcount/",
+	"dislay": "standalone",
+	"background-color": "#C5E99B",
+	"theme_color": "#000000",
+	"icons":[
+	{
+		"src": "https://raw.githubusercontent.com/aflacake/tasbihcount/main/img/logo-tasbih-count.ico",
+		"sizes": "32x32",
+		"type": "image/png"
+	},
+	{
+		"src": "https://github.com/aflacake/tasbihcount/raw/main/img/logo-tasbih-count.png",
+		"sizes": "640x640",
+		"type": "image/png"
+	}
+	]
+}

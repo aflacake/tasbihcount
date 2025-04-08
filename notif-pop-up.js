@@ -1,4 +1,4 @@
-//notifikasi semua halaman
+//notifikasi halaman utama
 ﻿function checkNotificationPermission() {
     const permissionStatus = localStorage.getItem("notificationPermission");
 
@@ -17,7 +17,9 @@ function requestNotificationPermission() {
         if (permission === "granded") {
             console.log("Notifikasi granded!");
             localStorage.setItem("notificationPermission", "granded");
-        }
+        } else {
+		alert('Izinkan notifikasi untuk mengakses pengingat tasbih setiap 5 waktu!');
+  }
     });
 }
 
@@ -52,4 +54,32 @@ if (checkNotificationPermission()) {
     mulaiMengingat();
     } else {
         requestNotificationPermission();
+	alert('Izinkan untuk mengingat jadwal 5 waktu');
 }
+
+
+
+if (!localStorage.getItem("panduanPopUp")) {
+    alert('Panduan cara pengguna baru:\n   - Tombol "Hitung" berfungsi untuk menghitung\n   - Tombol "Reset" berfungsi untuk memulai hitungan dari awal\n   - Teks "terhitung" menunjukkan progres hitungan Anda\n   - Tombol demo, dasbor, perpustakaan adalah alat lainnya dari tasbih count\nTerima kasih telah memilih Tasbih Count sebagai alat penghitung, semua pembaruan histori terwaktu di commit sumber terbuka lewat GitHub.');
+    
+    // satu kali
+    localStorage.setItem("panduanPopUp", "true");
+}
+
+
+
+
+//status koneksi
+document.addEventListener("DOMContentLoaded", function() {
+function checkConnection() {
+    const tidakAdaKoneksiDiv = document.getElementById("tidakAdaKoneksi");
+    if (navigator.onLine) {
+        tidakAdaKoneksiDiv.style.display="none";
+    } else {
+        tidakAdaKoneksiDiv.style.display="block";
+    }
+}
+checkConnection();
+window.addEventListener('online', checkConnection);
+window.addEventListener('offline', checkConnection);
+});

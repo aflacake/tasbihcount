@@ -1,4 +1,4 @@
-* {
+*  {
     margin: 0;
     padding: 0;
 }
@@ -18,16 +18,13 @@ body::-webkit-scrollbar {
 }
 
 
+/* ponsel pintar */
 @media (max-width: 768px) {
     .konten1, .konten2, .konten3 {
         width: 100%;
         margin-bottom: 20px;
     }
-    #acara, #perpustakaan {
-        width: 100%;
-    }
     .nav1 {
-    width: 100%;
         display: flex;
         flex-direction: row;
     }
@@ -37,7 +34,7 @@ body::-webkit-scrollbar {
     .nav1 li a {
         padding: 10px;
         
-    }
+    }    
     #but:active, #reset:active {
         transform: scale(1);
         transition-duration: 0.3s ease;
@@ -46,26 +43,6 @@ body::-webkit-scrollbar {
         width: 100%;
         padding: 10px;
     }
-    #populer {
-        width: 30%;
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 200px;
-        margin-left: 180px;
-    }
-    .garpuaku {
-    display: table;
-        width: 100%;
-        margin: auto;
-    }
-        #bantuaku2 {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            margin-left: 20px;
-            float: left;
-            width: 60%;
-        }
     .footer {
         display: flex;
         flex-direction: column;
@@ -77,13 +54,11 @@ body::-webkit-scrollbar {
         width: 100%;
         height: auto;
         .circles li {
-            bottom: 450px;
+            bottom: 590px;
         }
-    .circles li {
-        bottom: -20px;
-    }
     }
 }
+
 
 /* tidak ada koneksi */
 #tidakAdaKoneksi {
@@ -115,19 +90,18 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 
-
 /* nav1 */
 .nav1 {
     display: block;
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
-  background-color: rgb(117, 117, 117);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(117, 117, 117);
     border-bottom: 3px solid rgb(28, 223, 113);
-  box-shadow:
-    rgba(117, 117, 117, 0.9) 0px 4px 7px 0px,
-    rgba(117, 117, 117, 0.15) 0px 0px 0px 4px;
+    box-shadow:
+      rgba(117, 117, 117, 0.9) 0px 4px 7px 0px,
+      rgba(117, 117, 117, 0.15) 0px 0px 0px 4px;
 }
   #rumah {
     float: right;
@@ -160,6 +134,7 @@ body::-webkit-scrollbar {
   padding: 9px 9px;
   text-decoration: none;
   }
+
 /* button */
 #but:active {
   font-weight: bold;
@@ -173,11 +148,11 @@ body::-webkit-scrollbar {
 
 /*data dan tentang*/
 #simpan {
-    margin-bottom: 100px;
   text-align: right;
   padding: 3.5px;
+  margin-bottom: 100px;
   font-family: Arial Narrow;
-  color: white;
+  color: white
 }
 
 /* konten1 */
@@ -195,18 +170,17 @@ body::-webkit-scrollbar {
         border-radius: 0 0 230px 0;
     }
   #tentang2 {
-    display: block;
     margin: 15px 0 23px 5px;
-    font-size: 150%;
-    background-image: linear-gradient(rgb(28, 18, 79), rgb(28, 223, 113)); 
-    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
-  }
-  #tentang3 {
     font-size: 100%;
     background-image: linear-gradient(rgb(28, 18, 79), rgb(28, 223, 113)); 
     -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
   }
-    #kutipanAcak {
+  #tentang3 {
+    font-size: 150%;
+    background-image: linear-gradient(rgb(28, 18, 79), rgb(28, 223, 113)); 
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+    #kutipanAcakDemoEid {
         line-height: 1.6;
         font-size: 16px;
         white-space: pre-wrap;
@@ -216,14 +190,13 @@ body::-webkit-scrollbar {
         padding: 5px 8px;
         opacity: 0.8;
     }
-        #kutipanAcak.fade-out {
+        #kutipanAcakDemoEid.fade-out {
             opacity: 1;
             transition: opacity 4s ease-in-out;
         }
-    
-    #tentang4 {
+#tentang4 {
         display: block;
-        pointer-event:     none;
+        pointer-event: none;
         top: 0;
         left: 0;
         background-image: repeating-linear-gradient(
@@ -238,9 +211,9 @@ body::-webkit-scrollbar {
 
 /*konten2 */
 .konten2 {
-    display: block;
-    font-size: 16px;
-  margin: 0 0 50px 8px;
+  display: block;
+  font-size: 16px;
+  margin: 0 0 50px 0;
   padding: 3.5px;
   float: left;
   width: 45%;
@@ -265,118 +238,18 @@ body::-webkit-scrollbar {
     }
 
 /*konten3*/
-.konten3 {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-  margin: 0;
-  padding: 3.5px;
-  float: left;
-  width: 40%;
-}
-  #acara {
-    text-align: center;
-    font-size: 16px;
-    background-color: rgb(28, 223, 113);
-    border: none;
-    color: rgb(90, 90, 90);
-    padding: 7.5px 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin: 6px;
-    box-shadow: 0 9px rgb(117, 117, 117);
-    display: inline-block;
-    cursor: pointer;
-  }
-    #acara:hover {
-    color: rgb(28, 223, 113);
-      background-color: rgb(28, 18, 79);
-    }
-    #acara:active {
-    font-weight: bold;
-      background-color: ;
-      box-shadow: 0 4.5px rgb(117, 117, 117);
-      transform: translateY(4.5px)
-    }
-  #ketdemo {
-    padding-left: 25px;
-    padding-right: 25px;
-    border-bottom: 5px solid rgb(28, 223, 113);
-  }
-
-  #jadwal {
-    text-align: center;
-    font-size: 16px;
-    background-color: rgb(28, 223, 113);
-    border: none;
-    color: rgb(90, 90, 90);
-    padding: 7.5px 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin: 6px;
-    box-shadow: 0 9px rgb(117, 117, 117);
-    display: inline-block;
-    cursor: pointer;
-  }
-    #jadwal:hover {
-    color: rgb(28, 223, 113);
-      background-color: rgb(28, 18, 79);
-    }
-    #jadwal:active {
-    font-weight: bold;
-      background-color: ;
-      box-shadow: 0 4.5px rgb(117, 117, 117);
-      transform: translateY(4.5px)
-    }
-  #ketjadwal {
-    padding-left: 25px;
-    padding-right: 25px;
-    border-bottom: 5px solid rgb(28, 223, 113);
-  }
-
-  #perpustakaan {
-    text-align: center;
-    font-size: 16px;
-    background-color: rgb(28, 223, 113);
-    border: none;
-    color: rgb(90, 90, 90);
-    padding: 7.5px 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin: 6px;
-    box-shadow: 0 9px rgb(117, 117, 117);
-    display: inline-block;
-    cursor: pointer;
-  }
-    #perpustakaan:hover {
-    color: rgb(28, 223, 113);
-      background-color: rgb(28, 18, 79);
-    }
-    #perpustakaan:active {
-    font-weight: bold;
-      background-color: ;
-      box-shadow: 0 4.5px rgb(117, 117, 117);
-      transform: translateY(4.5px)
-    }
-  #ketperpus {
-    padding-left: 25px;
-    padding-right: 25px;
-    border-bottom: 5px solid rgb(28, 223, 113);
-  }
-  
-  /*tasbih populer*/
-  #populer {
+#populer {
     width: 30%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 300px;
-    margin-left: 180px;
+    margin-bottom: 210px;
+    margin-left: 10px;
     background-color: rgb(28, 223, 113);
     border-radius: 100px 30px 100px 30px;
     padding: 34px;
-    
-  }
-  #populer h2, #populer p {
+    width: 170px;
+}
+#populer h2, #populer p {
     margin: 2px;
   }
 
@@ -396,7 +269,7 @@ body::-webkit-scrollbar {
     height: 20px;
     background: rgba(28, 223, 113, 0.2);
     animation: animate 25s linear infinite;
-    bottom: -20px;
+    bottom: 20px;
   }
     .circles li:nth-child(1) {
       left: 13%;
@@ -482,31 +355,7 @@ body::-webkit-scrollbar {
       border-radius: 20%;
     }
   }
-
-/*Fork*/
-.garpuaku {
-  margin: 0;
-  float: left;
-  width: 60%;
-    font-size: 16px;
-  background-color: rgb(117, 117, 117);
-  border-radius: 0 150px 0 0;
-}
-  #forkme {
-    float: left;
-    width: 50%;
-  }
-  #bantuaku2 {
-    padding-bottom: 4px;
-    margin-top:-33px;
-    margin-left: 40px;
-    float: left;
-    width: 60%;
-    /*font*/
-    font-size: 16px;
-    font-weight: bold;
-    color: rgb(28, 223, 113);
-  }
+  
 
 /* footer */
 .footer {

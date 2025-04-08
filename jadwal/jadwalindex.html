@@ -9,9 +9,14 @@
   <link rel="stylesheet" href="jadwalstyle.css" />
 </head>
 <body>
+
+
+<div id="tidakAdaKoneksi">Tidak ada koneksi internet</div>
+
+
   <nav>
     <ul class="nav1">
-      <li id="logo"><img src="https://github.com/aflacake/tasbihcount/raw/main/img/logo-tasbih-count.png" width="30" height="30"/></li>
+      <li id="logo"><img src="https://github.com/aflacake/tasbihcount/raw/main/img/logo-tasbih-count.png" alt="logo Tasbih Count" width="30" height="30"/></li>
       <li id="rumah"><a href="https://aflacake.github.io/tasbihcount/">Tasbih Count</a></li>
       <li id="tentang"><a href="https://github.com/aflacake/tasbihcount/blob/main/README.md">Tentang</a></li>
       <li id="isu"><a href="https://github.com/aflacake/tasbihcount/issues">Isu</a></li>
@@ -34,22 +39,27 @@
 <!-- progress analitik -->
     <div class="laporan-harian">
     <p>Laporan setiap harian, mingguan, dan bulanan berdampak bagi Anda. Lihat progres analitik menjaga pertahanan bilangan biji Anda. Tetap dijalan Allah <br /> Laporan ini digunakan untuk tetap terus memantau Anda, sejauh mana Anda bertasbih mengingat kepadanya. <br /> **Data analitik bersifat pribadi, data yang Anda kirimkan tidak bersifat publik. <br /><br /> Data harian menghitung progress harian Anda, biasanya mereset dari awal setiap pergantian hari<br />Data mingguan, kurung waktu 7 hari Anda dapat mengetahui progress berjalan selama 7 hari<br />Data bulanan, kumulatif semua hasil ketukan tasbih biji digital Anda, selamat mengingat Allah!</p>
+    <p>Kunjungan terakhir: <span id="kunjungan"></span></p>
     <div class="proporsisi">
       <div class="progressH" id="progressHarian">
       <a>Progress Harian</a>
+	<div class="progress-bar" id="progressHarian"></div>
           <span id="progress-teksHarian">0/33</span>
-	</div>
-          
-          <div class="progressM" id="progressMingguan">
-          <a>Progress Mingguan</a>
-          <span id="progress-teksMingguan">0/231</span>
-	</div>          
-
-          <div class="progressB" id="progressBulanan">
-          <a>Progress Bulanan</a>
-          <span id="progress-teksBulanan">0/990</span>
-	</div>
       </div>
+          
+        <div class="progressM" id="progressMingguan">
+          <a>Progress Mingguan</a>
+	<div class="progress-bar" id="progressMingguan"></div>
+          <span id="progress-teksMingguan">0/231</span>
+        </div>          
+
+        <div class="progressB" id="progressBulanan">
+          <a>Progress Bulanan</a>
+	<div class="progress-bar" id="progressBulanan"></div>
+          <span id="progress-teksBulanan">0/990</span>
+        </div>
+
+     </div>
   </div>
   
 <br />

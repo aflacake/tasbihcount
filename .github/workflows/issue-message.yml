@@ -1,7 +1,7 @@
 name: Pesan Otomatis di Isu
 
 on:
-    issue:
+    issues:
         types: [opened]
 
 jobs: 

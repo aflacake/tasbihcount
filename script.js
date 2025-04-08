@@ -1,3 +1,15 @@
+if('serviceWorker' in navigator) {
+	window.addEventListener('load', () => {
+		navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+		console.log('Service Worker terdaftar dengan sukses:', registration);
+ 	}).catch(function(workerr) {
+		console.error('Pendaftaran Service Worker gagal: ', workerr);
+  });
+ });
+}
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
 //mengambil id
 const but = document.querySelector("#but");
@@ -88,6 +100,7 @@ function tampilKutipanAcak() {
     setTimeout(() => {
         kutipanTransisi.textContent = kutipanAcak;
         kutipanTransisi.classList.remove("fade-out");
+        kutipanTampilSebelumnya = kutipan;
     }, 4000);
   }
  }
