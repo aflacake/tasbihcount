@@ -3,31 +3,31 @@
     padding: 0;
 }
 html, body {
-	height: 100vh;
+    height: 100vh;
       font-family: Arial;
-    background-color: rgba(28, 223, 113, 0.3);
+    background-color: #C5E99B;
     overflow: hidden;
 }
 body {
-	overflow: scroll;
-	-ms-overflow-style: none;
-	scrollbar-width: none
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none
 }
 body::-webkit-scrollbar {
-	display: none;
+    display: none;
 }
 
 
 @media (max-width: 768px) {
     .konten1, .konten2, .konten3 {
         width: 100%;
-    	margin-bottom: 20px;
+        margin-bottom: 20px;
     }
     #acara, #perpustakaan {
         width: 100%;
     }
     .nav1 {
-	width: 100%;
+    width: 100%;
         display: flex;
         flex-direction: row;
     }
@@ -55,7 +55,7 @@ body::-webkit-scrollbar {
         margin-left: 180px;
     }
     .garpuaku {
-	display: table;
+    display: table;
         width: 100%;
         margin: auto;
     }
@@ -79,11 +79,21 @@ body::-webkit-scrollbar {
         .circles li {
             bottom: 450px;
         }
-	.circles li {
-		bottom: -20px;
-	}
+    .circles li {
+        bottom: -20px;
+    }
     }
 }
+
+/* tidak ada koneksi */
+#tidakAdaKoneksi {
+    display: none;
+    color: white;
+    background-color: salmon;
+    font-size: 16px;
+    text-align: center;
+}
+
 
 /* counter */
 .div1 {
@@ -245,14 +255,14 @@ body::-webkit-scrollbar {
     margin: 2px;
   }
 #listSosial {
-	margin-left: 25px;
-	list-style-type: square;
+    margin-left: 25px;
+    list-style-type: square;
 }
-	#listSosial a {
-		text-size: 18px;
-		color: rgb(28, 18, 79);
-		text-decoration: none;
-	}
+    #listSosial a {
+        text-size: 18px;
+        color: rgb(28, 18, 79);
+        text-decoration: none;
+    }
 
 /*konten3*/
 .konten3 {
@@ -359,7 +369,7 @@ body::-webkit-scrollbar {
     width: 30%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
     margin-left: 180px;
     background-color: rgb(28, 223, 113);
     border-radius: 100px 30px 100px 30px;
@@ -488,8 +498,8 @@ body::-webkit-scrollbar {
   }
   #bantuaku2 {
     padding-bottom: 4px;
-	margin-top:-30px;
-	margin-left: 40px;
+    margin-top:-33px;
+    margin-left: 40px;
     float: left;
     width: 60%;
     /*font*/
@@ -501,8 +511,8 @@ body::-webkit-scrollbar {
 /* footer */
 .footer {
     display: block;
-	float: center;
-	padding: 10px;
+    float: center;
+    padding: 10px;
     font-size: 16px;
   background-color: rgb(28, 18, 79);
   color: white;
