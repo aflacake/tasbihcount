@@ -1,3 +1,5 @@
+console.log("Bahasa Browser" + navigator.language);
+
 // keamanan
 const observer = new MutationObserver((mutationsList) => {
 	for(const mutation of mutationsList) {
