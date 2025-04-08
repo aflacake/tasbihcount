@@ -3,18 +3,18 @@
     padding: 0;
 }
 html, body {
-	height: 100vh;
+    height: 100vh;
       font-family: Arial;
-    background-color: rgba(28, 223, 113, 0.3);
+    background-color: #C5E99B;
     overflow: hidden;
 }
 body {
-	overflow: scroll;
-	-ms-overflow-style: none;
-	scrollbar-width: none
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none
 }
 body::-webkit-scrollbar {
-	display: none;
+    display: none;
 }
 
 
@@ -58,6 +58,17 @@ body::-webkit-scrollbar {
         }
     }
 }
+
+
+/* tidak ada koneksi */
+#tidakAdaKoneksi {
+    display: none;
+    color: white;
+    background-color: salmon;
+    font-size: 16px;
+    text-align: center;
+}
+
 
 /* counter */
 .div1 {
@@ -217,14 +228,14 @@ body::-webkit-scrollbar {
     margin: 2px;
   }
 #listSosial {
-	margin-left: 25px;
-	list-style-type: square;
+    margin-left: 25px;
+    list-style-type: square;
 }
-	#listSosial a {
-		text-size: 18px;
-		color: rgb(28, 18, 79);
-		text-decoration: none;
-	}
+    #listSosial a {
+        text-size: 18px;
+        color: rgb(28, 18, 79);
+        text-decoration: none;
+    }
 
 /*konten3*/
 #populer {
@@ -232,6 +243,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     margin-bottom: 210px;
+    margin-left: 10px;
     background-color: rgb(28, 223, 113);
     border-radius: 100px 30px 100px 30px;
     padding: 34px;
@@ -348,8 +360,8 @@ body::-webkit-scrollbar {
 /* footer */
 .footer {
     display: block;
-	float: center;
-	padding: 10px;
+    float: center;
+    padding: 10px;
     font-size: 16px;
   background-color: rgb(28, 18, 79);
   color: white;
