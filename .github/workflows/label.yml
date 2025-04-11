@@ -2,7 +2,7 @@ name: Label Isu TC
 
 on:
   issues:
-    type: [opened]
+    types: [opened]
 
 jobs:
   add-label:
@@ -14,8 +14,8 @@ jobs:
         with:
           script: |
             github.rest.issues.addLabels({
-            issue_number: ${{ github.event.issue.number }},
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            labels: ['isu baru']
-            })
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['isu baru']
+            });
