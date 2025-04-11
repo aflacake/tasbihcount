@@ -7,11 +7,12 @@ Alat menghitung dengan 33 bilangan digital secara konsisten: 33, 66, 99, total k
 - [X] Daftar
 - [ ] Perpustakaan, tidak sepenuhnya terdokumentasi
 
-## Acara `(BETA)`
-Tasbih Count mengadakan acara (umum) waktu mengingat Allah, menandai kemajuan sampai dimana, menjadikan hitungan akurat.
+
 ### UP-COMING
 - [X] Fitur hari perayaan Ramadhan
 - [ ] Counter permintaan tasbih pelanggan
+- [X] Counter acaraDEMO dan Idul Fitri ditambahkan
+- [ ] Notifikasi pop-up berguna
 
 
 # Instalasi
