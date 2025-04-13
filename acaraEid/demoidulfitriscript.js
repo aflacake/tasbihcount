@@ -41,97 +41,97 @@ document.addEventListener("DOMContentLoaded", function() {
     if (jumlahDemoEid === 6 && !localStorage.getItem("6")) {
       terhitungEid.textContent = "Alhamdulillah";
       deringTasbihCountDemoEid();
-      localStorage.setItem("6", true);
+	localStorage.setItem("6", true);
     }
     if (jumlahDemoEid === 7 && !localStorage.getItem("7")) {
       terhitungEid.textContent = "Allahuakbar";
       deringTasbihCountDemoEid();
-      localStorage.setItem("7", true);
+	localStorage.setItem("7", true);
     }
     if (jumlahDemoEid === 9 && !localStorage.getItem("9")) {
       terhitungEid.textContent = "Alhamdulillah";
       deringTasbihCountDemoEid();
-      localStorage.setItem("9", true);
+	localStorage.setItem("9", true);
     }
     if (jumlahDemoEid === 10 && !localStorage.getItem("10")) {
       terhitungEid.textContent = "Allahuakbar";
       deringTasbihCountDemoEid();
-      localStorage.setItem("10", true);
+	localStorage.setItem("10", true);
     }
     if (jumlahDemoEid === 12 && !localStorage.getItem("12")) {
       terhitungEid.textContent = "Alhamdulillah";
       deringTasbihCountDemoEid();
-      localStorage.setItem("12", true);
+	localStorage.setItem("12", true);
     }
     if (jumlahDemoEid === 13 && !localStorage.getItem("13")) {
       terhitungEid.textContent = "Allahuakbar";
       deringTasbihCountDemoEid();
-      localStorage.setItem("13", true);
+	localStorage.setItem("13", true);
     }
     if (jumlahDemoEid === 15 && !localStorage.getItem("15")) {
       terhitungEid.textContent = "Alhamdulillah";
       deringTasbihCountDemoEid();
-      localStorage.setItem("15", true);
+	localStorage.setItem("15", true);
     }
     if (jumlahDemoEid === 16 && !localStorage.getItem("16")) {
       terhitungEid.textContent = "Allahuakbar";
       deringTasbihCountDemoEid();
-      localStorage.setItem("16", true);
+	localStorage.setItem("16", true);
     }
     if (jumlahDemoEid === 18 && !localStorage.getItem("18")) {
       terhitungEid.textContent = "Alhamdulillah";
       deringTasbihCountDemoEid();
-      localStorage.setItem("18", true);
+	localStorage.setItem("18", true);
     }
     if (jumlahDemoEid === 19 && !localStorage.getItem("19")) {
       terhitungEid.textContent = "Allahuakbar";
       deringTasbihCountDemoEid();
-      localStorage.setItem("19", true);
+	localStorage.setItem("19", true);
     }
     if (jumlahDemoEid === 21 && !localStorage.getItem("21")) {
       terhitungEid.textContent = "Alhamdulillah";
       deringTasbihCountDemoEid();
-      localStorage.setItem("21", true);
+	localStorage.setItem("21", true);
     }
     if (jumlahDemoEid === 22 && !localStorage.getItem("22")) {
       terhitungEid.textContent = "Allahuakbar";
       deringTasbihCountDemoEid();
-      localStorage.setItem("22", true);
+	localStorage.setItem("22", true);
     }
     if (jumlahDemoEid === 24 && !localStorage.getItem("24")) {
       terhitungEid.textContent = "Alhamdulillah";
       deringTasbihCountDemoEid();
-      localStorage.setItem("24", true);
+	localStorage.setItem("24", true);
     }
     if (jumlahDemoEid === 25 && !localStorage.getItem("25")) {
       terhitungEid.textContent = "Allahuakbar";
       deringTasbihCountDemoEid();
-      localStorage.setItem("25", true);
+	localStorage.setItem("25", true);
     }
     if (jumlahDemoEid === 27 && !localStorage.getItem("27")) {
       terhitungEid.textContent = "Alhamdulillah";
       deringTasbihCountDemoEid();
-      localStorage.setItem("27", true);
+	localStorage.setItem("27", true);
     }
     if (jumlahDemoEid === 28 && !localStorage.getItem("28")) {
       terhitungEid.textContent = "Allahuakbar";
       deringTasbihCountDemoEid();
-      localStorage.setItem("28", true);
+	localStorage.setItem("28", true);
     }
     if (jumlahDemoEid === 30 && !localStorage.getItem("30")) {
       terhitungEid.textContent = "Alhamdulillah";
       deringTasbihCountDemoEid();
-      localStorage.setItem("30", true);
+	localStorage.setItem("30", true);
     }
     if (jumlahDemoEid === 31 && !localStorage.getItem("31")) {
       terhitungEid.textContent = "Allahuakbar";
       deringTasbihCountDemoEid();
-      localStorage.setItem("31", true);
+	localStorage.setItem("31", true);
     }
     if (jumlahDemoEid === 33 && !localStorage.getItem("33")) {
       terhitungEid.textContent = "Alhamdulillah";
       deringTasbihCountDemoEid();
-      localStorage.setItem("33", true);
+	localStorage.setItem("33", true);
     }
   }
 
