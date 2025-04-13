@@ -274,7 +274,7 @@ body::-webkit-scrollbar {
   float: left;
   width: 40%;
 }
-  #acara {
+  #acara, #jadwal, #perpustakaan {
     text-align: center;
     font-size: 16px;
     background-color: rgb(28, 223, 113);
@@ -288,11 +288,11 @@ body::-webkit-scrollbar {
     display: inline-block;
     cursor: pointer;
   }
-    #acara:hover {
+    #acara:hover, #jadwal:hover, #perpustakaan:hover {
     color: rgb(28, 223, 113);
       background-color: rgb(28, 18, 79);
     }
-    #acara:active {
+    #acara:active, #jadwal:active, #perpustakaan:hover {
     font-weight: bold;
       background-color: ;
       box-shadow: 0 4.5px rgb(117, 117, 117);
@@ -304,60 +304,12 @@ body::-webkit-scrollbar {
     border-bottom: 5px solid rgb(28, 223, 113);
   }
 
-  #jadwal {
-    text-align: center;
-    font-size: 16px;
-    background-color: rgb(28, 223, 113);
-    border: none;
-    color: rgb(90, 90, 90);
-    padding: 7.5px 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin: 6px;
-    box-shadow: 0 9px rgb(117, 117, 117);
-    display: inline-block;
-    cursor: pointer;
-  }
-    #jadwal:hover {
-    color: rgb(28, 223, 113);
-      background-color: rgb(28, 18, 79);
-    }
-    #jadwal:active {
-    font-weight: bold;
-      background-color: ;
-      box-shadow: 0 4.5px rgb(117, 117, 117);
-      transform: translateY(4.5px)
-    }
   #ketjadwal {
     padding-left: 25px;
     padding-right: 25px;
     border-bottom: 5px solid rgb(28, 223, 113);
   }
 
-  #perpustakaan {
-    text-align: center;
-    font-size: 16px;
-    background-color: rgb(28, 223, 113);
-    border: none;
-    color: rgb(90, 90, 90);
-    padding: 7.5px 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin: 6px;
-    box-shadow: 0 9px rgb(117, 117, 117);
-    display: inline-block;
-    cursor: pointer;
-  }
-    #perpustakaan:hover {
-    color: rgb(28, 223, 113);
-      background-color: rgb(28, 18, 79);
-    }
-    #perpustakaan:active {
-    font-weight: bold;
-      background-color: ;
-      box-shadow: 0 4.5px rgb(117, 117, 117);
-      transform: translateY(4.5px)
-    }
   #ketperpus {
     padding-left: 25px;
     padding-right: 25px;
