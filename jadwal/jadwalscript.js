@@ -34,6 +34,13 @@ tampilanKunjunganTerakhir();
 
 
 
+const tanggalHijriah = moment().format('iD iMMMM iYYYY');
+document.getElementById("tanggal-hijriah").textContent = "Tanggal Hijriah: " + tanggalHijriah + " H";
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
 function jamSaatIni() {
   const sekarang = new Date();
