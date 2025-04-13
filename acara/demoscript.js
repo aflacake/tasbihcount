@@ -43,7 +43,7 @@ function reset() {
       console.log("Reset: " + jumlahdemo)
 }
     resetBtn.onclick = reset;
-});
+
 
 
 
@@ -76,3 +76,21 @@ function tampilKutipanAcakDemo() {
         }, waktuKutipAcakDemo);
     }
     setKutipanDemoRandom();
+
+
+
+
+// keamanan tombol
+let setelahWaktuKlik = 0;
+const klikThreshold = 2000;
+
+but.addEventListener('click', function(event) {
+	const waktuSaatIni = Date.now();
+	if (waktuSaatIni - setelahWaktuKlik < klikThreshold) {
+		alert('Klik sangat cepat! potensi spam');	
+	} else {
+		console.log('Klik valid!');
+	}
+	setelahWaktuKlik = waktuSaatIni;
+ });
+});
