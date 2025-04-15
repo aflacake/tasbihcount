@@ -12,7 +12,7 @@ Alat menghitung dengan 33 bilangan digital secara konsisten: 33, 66, 99, total k
 - [X] Fitur hari perayaan Ramadhan
 - [ ] Counter permintaan tasbih pelanggan
 - [X] Counter acaraDEMO dan Idul Fitri ditambahkan
-- [ ] Notifikasi pop-up berguna
+- [X] Notifikasi pop-up berguna
 - [ ] Fitur hemat paket data
 
 
