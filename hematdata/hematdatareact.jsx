@@ -1,0 +1,111 @@
+import React from 'react';
+import reactDOM from 'react-dom/client'
+
+function App() {
+    const nama = "Tasbih";
+    const namaApp = "Count";
+    const finalJudul = <p>{nama} {namaApp}</p>;
+    const [hitungan, setHitungan] = React.useState(0);
+                    
+         function tambahHitungan() {
+         setHitungan(hitungan + 1);
+         }
+                    
+             function resetHitungan() {
+                 setHitungan(0)
+             }
+                    
+                    // tautan
+                    function bukaAcara() {
+                        window.location.href="https://aflacake.github.io/tasbihcount/acara/indexdemo.html";
+                    }
+                    function  bukaAcaraIdulFitri() {
+                        window.location.href="https://aflacake.github.io/tasbihcount/acaraEid/indexdemoidulfitri.html";
+                    }
+                    function bukaJadwal() {
+                        window.location.href="https://aflacake.github.io/tasbihcount/jadwal/jadwalindex.html";
+                    }
+                    function bukaPerpustakaan() {
+                        window.location.href="https://github.com/aflacake/tasbihcount/tree/main/perpustakaan";
+                    }
+                    
+                    
+                    
+        return(
+    <div>
+        <ul className="nav1">
+            <li className="logo"><img src="https://github.com/aflacake/tasbihcount/raw/main/img/logo-tasbih-count.png" alt="logo Tasbih Count" width="30px" height="30px" /></li>
+            <li className="rumah"><a href="https://aflacake.github.io/tasbihcount/">Tasbih Count</a></li>
+            <li className="tentang"><a href="https://github.com/aflacake/tasbihcount/blob/main/README.md">Tentang</a></li>
+            <li className="isu"><a href="https://github.com/aflacake/tasbihcount/issues">Isu</a></li>
+        </ul>
+    
+    
+            <p className="kontenTasbih">
+                <p className="terhitung">Terhitung: {hitungan}</p>
+                <button className="hitungBtn" onClick={tambahHitungan}>Hitung</button>
+                <button className="resetBtn" onClick={resetHitungan}>Reset</button>
+             </p>   
+                
+                
+    <article className="kontenPertama">
+      <h1>Sudahkah Anda <br /> mengingat Allah hari ini</h1>
+      <h1><br />Bertasbihlah dalam <br /> mengingat Allah</h1>
+      </article>
+      
+      <p className="deskrip">Tasbih Count alat menghitung dengan 33 bilangan digital secara konsisten: 33, 66, 99, total keseluruhan 100 seperti bilangan biji manik atau lainnya. Dalam ISLAM, jumlah manik umumnya 100, namun tidak terbatas Anda mengingat kepada sang pencipta.</p>
+      
+      <h2>Apa yang baru?</h2>
+          <p>Semua histori komitmen terjadi waktu saat ini di <a href="https://github.com/aflacake/tasbihcount/commits/second/"><i><b>commit</b></i></a>, lihat paket tersedia juga. Jangan lupa memeriksa status di Isu terbaru atau urutan terlama</p>
+          
+          <p>Menyukai pengembangan aplikasi biji manik digital ini?<br />Bagikan di: </p>
+        <ul className="listSosial">
+            <li className="media1"><img width="24px" height="24px" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/><a href="https://wa.me/?text=Tetaplah%20ingat%20kepada-Nya%20dengan%20alat%20hitung%20tasbih%20digital%20setiap%20genggaman%20Anda,%20di%20GitHub: https://aflacake.github.io/tasbihcount">WhatsApp</a></li>
+            <li className="media2"><img width="24px" height="24px" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/><a href="https://www.facebook.com/sharer/sharer.php?u=https://aflacake.github.io/tasbihcount">Facebook</a></li>
+            </ul>
+            <p>Tetap di jalan Allah!</p>
+            
+            
+        <button className="acara" onClick={bukaAcara}>Acara</button>
+        
+        <button className="acara" onClick={bukaAcaraIdulFitri}>Acara Idul Fitri</button>
+      <p className="ketdemo">Ikuti acara DEMO, acara Idul Fitri, semua biji digital sudah disiapkan dari awal oleh <i>Machine Learning</i>.</p>
+
+        <button className="jadwal" onClick={bukaJadwal}>Dasbor</button>
+      <p className="ketjadwal">Halaman pengguna, data analitik, dilengkapi cuaca serta jam lokal.</p>
+    
+        <button className="perpustakaan" onClick={bukaPerpustakaan}>Perpustakaan</button>
+      <p className="ketperpus">Media dan artikel yang mungkin menarik bagi Anda.</p>
+      
+      
+      <article className="populer">
+      <h2>Bilangan tasbih populer</h2>
+        <ul>
+          <li>Allahu akbar</li>
+          <li>Subhanallah</li>
+          <li>Masyaallah</li>
+          <li>Shalawat kepada Nabi Muhammad 1 kali</li>
+          <li>Shalawat kepada Nabi Muhammad 10 kali</li>
+        </ul>
+    </article>
+    
+    
+    <article className = "forkGitHub">
+    <a className="forkme" href="https://github.com/aflacake/tasbihcount"><img decoding="async" width="74.5" height="74.5" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_green_007200.png" alt="Fork me on GitHub" /></a>
+      <p className="bantuaku2">Bantu alat Tasbih Count menjadi baik dengan berkunjung ke repositori, berikan nasihat di isu</p>
+      </article>
+      
+      
+      
+    <p className="footer">Made by 💚 @aflacake<br />2025-</p>
+            </div>
+        );
+       }
+       
+       
+       
+        ReactDOM.render(
+            <App />,
+        document.getElementById("container")
+        );
+        );
