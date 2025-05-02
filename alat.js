@@ -27,3 +27,8 @@ but.addEventListener('click', function(event) {
 	}
 	setelahWaktuKlik = waktuSaatIni;
 });
+
+window.addEventListener("beforeunload", function (e) {
+  e.preventDefault();
+  e.returnValue = '';
+});
