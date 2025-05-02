@@ -1,4 +1,4 @@
-<p align="right">Bahasa Indonesia</p>
+<p align="right">Bahasa: Indonesia</p>
 <img src="https://raw.githubusercontent.com/aflacake/tasbihcount/second/img/logo-tasbih-count.png" width="200" height="200" alt="Tasbih Count"/>
 
 # Tasbih Count
