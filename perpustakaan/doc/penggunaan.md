@@ -1,4 +1,4 @@
-# Penggunaan - #1
+# Penggunaan
 
 Menggunakan:
 - Halaman main, disebut `index.html` sebagai halaman bawaan
