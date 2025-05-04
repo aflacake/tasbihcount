@@ -1,0 +1,3 @@
+Untuk pembaruan kali ini adalah hari raya secara spesifik ditambahkan namun bukan acara DEMO harian seperti biasanya. Fitur acara ini memungkinkan pengguna secara otomats mencetak jumlah bilangan tasbih secara auto-ML (_Machine Learning_), supaya tahu sampai mana dan sejauh mana ia bertasbih kepada-Nya.
+
+Ini mencangkup pembaruan lainnya yang signifikan dengan ditambahkan audio ketika mencapai bilangan tertentu, termasuk pembaruan saat DEMO acara Idul Fitri ini, secara terbuka sumber ini memungkinkan pengguna menerima tawaran membagikan umpan balik masukan ketika ada fitur kurang fungsionalitas.
