@@ -16,7 +16,6 @@ self.addEventListener("push", (event) => {
     const options = {
         body: event.data.text(),
         icon: 'https://raw.githubusercontent.com/aflacake/tasbihcount/main/img/logo-tasbih-count.ico',
-        badge: 'https://raw.githubusercontent.com/aflacake/tasbihcount/main/img/logo-tasbih-count.png',
     };
 
     event.waitUntil(
