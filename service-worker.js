@@ -1,5 +1,5 @@
 self.addEventListener('install', (event) => {
-	event.awaitUntil(
+	event.waitUntil(
 		caches.open('v1').then((cache) => {
 			return cache.addAll([
 				'index.html',
@@ -12,11 +12,22 @@ self.addEventListener('install', (event) => {
 	);
 });
 
-self.addEventListener('fetch', (event) => {
-	event.responWidth(
-		caches.match(event.request).then((cachedResponse)=> {
-			return cachedResponse || fetch(event.request);
-		})
-	
-	);
+self.addEventListener("push", (event) => {
+    const options = {
+        body: event.data.text(),
+        icon: 'https://raw.githubusercontent.com/aflacake/tasbihcount/main/img/logo-tasbih-count.ico',
+        badge: 'https://raw.githubusercontent.com/aflacake/tasbihcount/main/img/logo-tasbih-count.png',
+    };
+
+    event.waitUntil(
+        self.registration.showNotification("Pengingat Tasbih", options)
+    );
+});
+
+self.addEventListener("notificationclick", event => {
+    event.notification.close();
+
+    event.waitUntil(
+        clients.openWindow('https://aflacake.github.io/tasbihcount/')
+    );
 });
