@@ -2,11 +2,11 @@
 ﻿function checkNotificationPermission() {
     const permissionStatus = localStorage.getItem("notificationPermission");
 
-    if (permissionStatus === "granded") {
+    if (permissionStatus === "granted") {
          console.log("sudah diizinkan sebelumnya");
         return true;
     }
-    if (permissionStatus != "granded") {
+    if (permissionStatus != "granted") {
         requestNotificationPermission();
     }
     return false;
@@ -14,18 +14,25 @@
 
 function requestNotificationPermission() {
     Notification.requestPermission().then(permission => {
-        if (permission === "granded") {
-            console.log("Notifikasi granded!");
-            localStorage.setItem("notificationPermission", "granded");
+        if (permission === "granted") {
+            console.log("Notifikasi granted!");
+            localStorage.setItem("notificationPermission", "granted");
         } else {
 		alert('Izinkan notifikasi untuk mengakses pengingat tasbih setiap 5 waktu!');
   }
     });
 }
 
-function sendNotification(message) {
-    if (Notification.permission === "granded") {
-        new Notification(message);
+function sendNotification(pesan) {
+    if (Notification.permission === "granted") {
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.ready.then(registration => {
+                registration.showNotification('Pengingat Tasbih' => {
+                    body = pesan,
+                    icon: 'https://raw.githubusercontent.com/aflacake/tasbihcount/main/img/logo-tasbih-count.ico',
+                });
+            });
+        }
     }
 }
 
@@ -34,21 +41,22 @@ function checkAndSendReminderTasbih() {
     const jamRemind = sekarangRemind.getHours();
     const menitRemind = sekarangRemind.getMinutes();
 
-    if (jamRemind === 5 && menitRemind === 0) {
-        sendNotification("Waktunya dzikir Subuh! mulai ambil Tasbih Count untuk melacak proses Anda.");
-    } else if (jamRemind === 12 && menitRemind === 0) {
-        sendNotification("Waktunya dzikir Zuhur! mulai ambil Tasbih Count untuk melacak proses Anda.");
-    } else if (jamRemind === 15 && menitRemind === 0) {
-        sendNotification("Waktunya dzikir Asar! mulai ambil Tasbih Count untuk melacak proses Anda.");
-    } else if (jamRemind === 18 && menitRemind === 0) {
-        sendNotification("Waktunya dzikir Maghrib! mulai ambil Tasbih Count untuk melacak proses Anda.");
-    } else if (jamRemind === 19 && menitRemind === 0) {
-        sendNotification("Waktunya dzikir Isya'! mulai ambil Tasbih Count untuk melacak proses Anda.");
+    const waktuDzikir = {
+        5: "Subuh",
+        12: "Zuhur",
+        15: "Asar",
+        18: "Maghrib",
+        19: "Isya'"
+    };
+
+    if (waktuDzikir[jamRemind] && menitRemind === 0) {
+        sendNotification(`Waktunya dzikir ${waktuDzikir[jamRemind]}! Ambil Tasbih Count untuk melacak proses Anda.`)
     }
 }
 
 function mulaiMengingat() {
-    setInterval(checkAndSendReminder, 60000);
+    console.log("Pengingat dimulai...");
+    setInterval(checkAndSendReminderTasbih, 60000);
 }
 if (checkNotificationPermission()) {
     mulaiMengingat();
