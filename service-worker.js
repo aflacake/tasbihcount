@@ -12,6 +12,18 @@ self.addEventListener('install', (event) => {
     );
 });
 
+
+self.addEventListener('fetch', (event) => {
+    event.responWidth(
+        caches.match(event.request).then((cachedResponse)=> {
+            return cachedResponse || fetch(event.request);
+        })
+	
+    );
+});
+
+
+
 self.addEventListener("push", (event) => {
     const options = {
         body: event.data.text(),
