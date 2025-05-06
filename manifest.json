@@ -1,6 +1,6 @@
 {
-    "name": "Tasbih Count",
-    "short_name": "TC",
+    "name": "Tasbih Count - Alat Penghitung",
+    "short_name": "Tasbih Count",
     "description": "Alat tasbih penghitung mengetahui pelacakan dimana Anda sampai sejauh mana.",
     "start_url": "https://aflacake.github.io/tasbihcount/",
     "display": "standalone",
