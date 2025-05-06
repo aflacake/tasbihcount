@@ -30,7 +30,6 @@ function sendNotification(pesan) {
                 registration.showNotification('Pengingat Tasbih', {
                     body = pesan,
                     icon: 'https://raw.githubusercontent.com/aflacake/tasbihcount/main/img/logo-tasbih-count.ico',
-		            badge: 'https://raw.githubusercontent.com/aflacake/tasbihcount/main/img/logo-tasbih-count.png',
                 });
             });
         }
